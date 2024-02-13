@@ -41,7 +41,13 @@ const itinerary = [{
       title: "Arrival in Bangkok",
       description: "Arrival at Bangkok's Suvarnabhumi Airport followed by a private transfer to your hotel.",
       image: "/arrival.webp"
-    }
+    },
+    {
+      title: "Dinner in Chinatown",
+      description: "Enjoy a delicious dinner in Bangkok's vibrant Chinatown, known for its street food and lively atmosphere.",
+      image: "/chinatown.jpeg"
+    },
+
   ]
 }, {
   day: "June 17th, 2024: Private Driver for the day",
