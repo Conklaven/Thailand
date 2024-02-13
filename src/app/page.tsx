@@ -1,6 +1,12 @@
 import Image from "next/image";
 
-function ImageRow({ activity }) {
+interface Activity {
+  title: string;
+  description: string;
+  image: string | string[];
+}
+
+function ImageRow({ activity }: { activity: Activity }) {
   // If activity.image is an array, map over it and display all images
   // If it's a string, display it as a single image
   const images = Array.isArray(activity.image) ? activity.image : [activity.image];
