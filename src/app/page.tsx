@@ -30,7 +30,7 @@ const itinerary = [{
   activities: [
     {
       title: "Departure from Tel Aviv to Bangkok",
-      description: "Departure on EL AL LY 81 at 12:55 AM, arriving the next day at 3:00 PM.",
+      description: "Departure on EL AL LY 81 at 11:45 PM, arriving the next day at 3:00 PM.",
       image: "/elal.webp"
     }
   ]
@@ -39,7 +39,7 @@ const itinerary = [{
   activities: [
     {
       title: "Arrival in Bangkok",
-      description: "Arrival at Bangkok's Suvarnabhumi Airport followed by a private transfer to your hotel.",
+      description: "3:00PM Arrival at Bangkok's Suvarnabhumi Airport followed by a private transfer to your hotel.",
       image: "/arrival.webp"
     },
     {
