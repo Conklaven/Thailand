@@ -93,6 +93,23 @@ const itinerary = [{
       title: "Travel to Chiang Mai",
       description: "Catch a flight from Bangkok to Chiang Mai with AirAsia, departing at 11:25 AM and arriving at 12:40 PM. Check into the U Chiang Mai Hotel upon arrival.",
       image: ["/takeoff.webp", "/uchiang.jpeg"] 
+    },
+    
+    {
+      title: "Wat Chedi Luang",
+      description: "Visit Wat Chedi Luang, known for its ancient ruins and towering stupa.",
+      image: ["/WatChediLuang.jpeg"] 
+    },
+    {
+      title: "Neng Earthen Jar Roast Pork",
+      description: "Enjoy a delicious lunch at Neng Earthen Jar Roast Pork, known for its local cuisine.",
+      image: ["/Neng-Earthen-Jar-Roast-Pork-4.jpeg"] 
+    },
+
+    {
+      title: "Visit the Chiang Mai Night Bazaar",
+      description: "Explore the vibrant Chiang Mai Night Bazaar, known for its local crafts, food, and entertainment.",
+      image: ["/chiangMaiNight.webp"] 
     }
   ]
 }, {
@@ -102,15 +119,40 @@ const itinerary = [{
       title: "Maerim Elephant Sanctuary",
       description: "Half-day morning visit to Maerim Elephant Sanctuary for an intimate experience with elephants.",
       image: ["/elephants.jpeg", "/maerim2.webp", "/maerim3.jpeg"]
+    },
+    {
+      title: "Huen Phen",
+      description: "Enjoy a traditional Northern Thai lunch at Huen Phen, known for its authentic cuisine.",
+      image: ["/huen-phen.jpg"]
+    },
+    {
+      title: "Chang Phueak Pork Leg Rice",
+      description: "Savor a delicious dinner at Chang Phueak Pork Leg Rice, known for its local specialties.",
+      image: ["/Khao-Kha-Moo.jpg"]
+    },
+    {
+      title: "Chiang Mai Cabaret Show",
+      description: "Enjoy an evening at the Chiang Mai Cabaret Show, featuring colorful performances and entertainment.",
+      image: ["/caberet.jpeg"]
     }
   ]
 }, {
   day: "June 21st, 2024",
   activities: [
     {
+      title: "Chom Cafe & Restaurant",
+      description: "Enjoy a leisurely breakfast at Chom Cafe & Restaurant, known for its scenic views and delicious cuisine.",
+      image: ["/chom.jpeg", "/chom2.jpeg"]
+    },
+    {
       title: "Flight to Krabi",
       description: "Depart from Chiang Mai to Krabi with AirAsia, taking off at 4:25 PM and landing at 6:25 PM. Check into the Holiday Ao Nang Beach Resort Krabi upon arrival.",
       image: ["/takeoff2.webp", "/krabihotel.jpeg"]
+    },
+    {
+      title: "Lae Lay Grill",
+      description: "Enjoy a memorable dinner at Lae Lay Grill, known for its stunning views and fresh seafood.",
+      image: ["/LaeLay.jpeg"]
     }
   ]
 }, {
@@ -125,6 +167,11 @@ const itinerary = [{
       title: "Wat Tham Seua (Tiger Cave Temple)",
       description: "Explore the spiritual site of Wat Tham Seua, set amidst lush jungle.",
       image: "/tigercave.jpeg"
+    }, 
+    {
+      title: "Krabi Town Night Market",
+      description: "Conclude the day with a visit to the Krabi Town Night Market, known for its local food and vibrant atmosphere.",
+      image: "/krabi-town-market.jpg"
     }
   ]
 }, {
@@ -134,6 +181,11 @@ const itinerary = [{
       title: "Krabi 4 Island Adventure",
       description: "Embark on the Krabi 4 Island Adventure tour, visiting Ko Kai (Chicken Island), Ko Poda, Phra Nang Cave Beach, and the Tub Islands.",
       image: ["/chicken.jpeg", "/kopoda.jpeg", "/tubislands.jpeg"]
+    },
+    {
+      title: "Ao Nang Night Market",
+      description: "Explore the vibrant Ao Nang Night Market, known for its local food and lively atmosphere.",
+      image: ["/AoNangNight.webp"]
     }
   ]
 }, {
