@@ -282,8 +282,8 @@ export default function Home() {
           {/* Adjust the width and height as per your requirement */}
           <Image
             src="/thailand.jpg" // The path to your image
-            width={1000} // Add a width
-            height={300} // Add a height
+            width={3000} // Add a width
+            height={500} // Add a height
             alt="Hero Image"
             priority // This prop is optional, it's good for above-the-fold images
         />
