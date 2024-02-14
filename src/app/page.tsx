@@ -166,7 +166,7 @@ const itinerary = [{
     {
       title: "Wat Chedi Luang",
       description: "Visit Wat Chedi Luang, known for its ancient ruins and towering stupa.",
-      image: ["/WatChediLuang.jpeg","/chedi2.jpeg", "/chedi4.jpeg"] 
+      image: ["/WatChediLuang.jpeg","/Chedi2.jpeg", "/Chedi4.jpeg"] 
     },
     {
       title: "Neng Earthen Jar Roast Pork",
