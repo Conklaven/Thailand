@@ -18,31 +18,24 @@ function Carousel({ activity }: { activity: Activity }) {
   const [activeSlide, setActiveSlide] = useState(0);
   const carouselRef = useRef<HTMLDivElement>(null);
 
-
   // Function to set active slide
   const selectSlide = (index: number) => {
     setActiveSlide(index);
   };
 
-  // Adjust carousel height based on the tallest image
   useEffect(() => {
     const carousel = carouselRef.current;
     if (carousel) {
       const imgElements = carousel.getElementsByTagName('img');
-  
       const adjustHeight = () => {
         let maxHeight = 0;
-        // Convert HTMLCollection to an array within adjustHeight scope
         const imgs = Array.from(imgElements);
-  
         for (let img of imgs) {
           if (img.offsetHeight > maxHeight) maxHeight = img.offsetHeight;
         }
-        carousel.style.height = `${maxHeight}px`; // Set the carousel height
+        carousel.style.height = `${maxHeight}px`;
       };
-  
-      // Ensure images are loaded before adjusting height
-      // Convert HTMLCollection to an array here as well to use forEach
+
       const imgsArray = Array.from(imgElements);
       imgsArray.forEach((img) => {
         if (img.complete) {
@@ -52,7 +45,17 @@ function Carousel({ activity }: { activity: Activity }) {
         }
       });
     }
-  }, [images]); // Dependency array to re-run the effect if images change
+  }, [images]);
+
+  // Automatically transition to the next slide every 2 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveSlide((prevActiveSlide) => (prevActiveSlide + 1) % images.length);
+    }, 2000); // Change slide every 2000 milliseconds
+
+    // Clear interval when component unmounts or images change
+    return () => clearInterval(interval);
+  }, [images]);
   
   
 
@@ -305,7 +308,7 @@ const itinerary = [{
     {
       title: "Old Phuket Town",
       description: "Explore Old Phuket Town, known for its Sino-Portuguese architecture and vibrant streets.",
-      image: "/oldPhuket.jpeg"
+      image: ["/oldPhuket.jpeg", "/old2.webp", "/old3.jpeg"]
     }
   ]
 }, {
@@ -319,7 +322,7 @@ const itinerary = [{
     {
       title: "Dinner at Raan Jay Fai",
       description: "Conclude the trip with a memorable dinner at Raan Jay Fai, a Michelin-starred street food restaurant.",
-      image: "/raan.jpeg"
+      image: ["/raan.jpeg", "/raan2.jpeg", "/raan3.jpeg"]
     }
   ]
 }, {
