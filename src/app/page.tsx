@@ -63,7 +63,7 @@ function Carousel({ activity }: { activity: Activity }) {
     <div ref={carouselRef} className="relative w-full overflow-hidden" data-carousel="slide">
       {images.map((imgSrc, index) => (
         <div key={index} className={`absolute w-full transition-opacity duration-700 ease-in-out ${index === activeSlide ? 'opacity-100' : 'opacity-0'}`}>
-          <img src={imgSrc} className="w-1/4 object-contain" alt={`Carousel image ${index + 1}`} />
+          <img src={imgSrc} className="md:w-1/4 w-1/2 object-contain" alt={`Carousel image ${index + 1}`} />
         </div>
       ))}
       <div className="absolute z-30 flex w-full bottom-0 pb-2">
@@ -366,13 +366,13 @@ export default function Home() {
   }, [inView]); // Dependency array includes 'inView' to update the listener when the state changes
 
   return (
-    <main className="relative min-h-screen flex flex-col items-center justify-between p-24">
+    <main className="relative min-h-screen flex flex-col items-center justify-between md:p-24 p-1">
       {/* Gradient Overlay */}
       <div className="gradient-overlay"></div>
 
       {/* Your content here, wrapped in divs with 'fade-in' class */}
       <div className="hero-container w-[100%]">
-        <div className="relative h-[500px] w-full overflow-hidden">
+        <div className="relative md:h-[500px] w-full overflow-hidden">
           {/* Adjust the width and height as per your requirement */}
           <Image
             src="/thailand.jpg" // The path to your image
@@ -382,7 +382,7 @@ export default function Home() {
             priority // This prop is optional, it's good for above-the-fold images
         />
         <div className="absolute inset-0 bg-black bg-opacity-50"></div> {/* Overlay if needed */}
-          <h1 className="absolute top-1/2 text-center w-[100%] text-white text-4xl font-bold">
+          <h1 className="absolute top-1/2 text-center w-[100%] text-white md:text-6xl  text-4xl font-bold">
             Klaven Family Trip to Thailand
           </h1>
         </div>
