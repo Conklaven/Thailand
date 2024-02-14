@@ -31,3 +31,29 @@ body {
     text-wrap: balance;
   }
 }
+
+/* Add this CSS to your global stylesheet or within a <style> tag in your component file */
+
+/* Fixed gradient overlay at the bottom of the viewport */
+.gradient-overlay {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30%; /* Adjust the height as needed */
+  background: linear-gradient(transparent, black);
+  pointer-events: none; /* Ensures clicks pass through the overlay */
+  z-index: 100; /* Ensure it's above other content but below fixed or absolute elements */
+}
+
+/* Fade-in animation */
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
+/* Class to apply when element is in viewport */
+.in-view {
+  opacity: 1 !important;
+}
+

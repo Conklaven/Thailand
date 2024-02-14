@@ -1,7 +1,9 @@
 'use client'
 
 import Image from "next/image";
-import Slider from "react-slick";
+
+
+
 
 interface Activity {
   title: string;
@@ -331,9 +333,41 @@ const itinerary = [{
   ]
 }]
 
+
 export default function Home() {
+  // State to track elements that are in view
+  const [inView, setInView] = useState<number[]>([]);
+
+
+  useEffect(() => {
+    const handleScroll = () => {
+      document.querySelectorAll('.fade-in').forEach((el, index) => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight) {
+          // Add index of element to 'inView' state if it's in the viewport
+          if (!inView.includes(index)) {
+            setInView([...inView, index]);
+          }
+        }
+      });
+    };
+
+    // Register the scroll event listener
+    window.addEventListener('scroll', handleScroll);
+
+    // Initial check to see if any elements are in view on load
+    handleScroll();
+
+    // Clean up the event listener
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, [inView]); // Dependency array includes 'inView' to update the listener when the state changes
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="relative min-h-screen flex flex-col items-center justify-between p-24">
+      {/* Gradient Overlay */}
+      <div className="gradient-overlay"></div>
+
+      {/* Your content here, wrapped in divs with 'fade-in' class */}
       <div className="hero-container w-[100%]">
         <div className="relative h-[500px] w-full overflow-hidden">
           {/* Adjust the width and height as per your requirement */}
@@ -350,10 +384,10 @@ export default function Home() {
           </h1>
         </div>
       </div>
-        
-        {/* <!-- Itinerary --> */}
-        <ol className="relative border-s border-gray-200 dark:border-gray-700">
-        {itinerary.map((day, index) => (
+
+      {/* Itinerary */}
+      <ol className="relative border-s border-gray-200 dark:border-gray-700">
+      {itinerary.map((day, index) => (
             <li className="mb-10 ms-4" key={index}>
               <div className="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
               <time className="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">{day.day}</time>
@@ -366,7 +400,7 @@ export default function Home() {
               ))}
             </li>
           ))}
-        </ol>
+      </ol>
     </main>
-    );  
-  }
+  );
+}
