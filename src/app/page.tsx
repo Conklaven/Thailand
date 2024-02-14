@@ -1,4 +1,7 @@
+'use client'
+
 import Image from "next/image";
+import Slider from "react-slick";
 
 interface Activity {
   title: string;
@@ -6,24 +9,77 @@ interface Activity {
   image: string | string[];
 }
 
-function ImageRow({ activity }: { activity: Activity }) {
-  // If activity.image is an array, map over it and display all images
-  // If it's a string, display it as a single image
+import React, { useState, useEffect, useRef } from "react";
+
+function Carousel({ activity }: { activity: Activity }) {
   const images = Array.isArray(activity.image) ? activity.image : [activity.image];
+  const [activeSlide, setActiveSlide] = useState(0);
+  const carouselRef = useRef<HTMLDivElement>(null);
+
+
+  // Function to set active slide
+  const selectSlide = (index: number) => {
+    setActiveSlide(index);
+  };
+
+  // Adjust carousel height based on the tallest image
+  useEffect(() => {
+    const carousel = carouselRef.current;
+    if (carousel) {
+      const imgElements = carousel.getElementsByTagName('img');
+  
+      const adjustHeight = () => {
+        let maxHeight = 0;
+        // Convert HTMLCollection to an array within adjustHeight scope
+        const imgs = Array.from(imgElements);
+  
+        for (let img of imgs) {
+          if (img.offsetHeight > maxHeight) maxHeight = img.offsetHeight;
+        }
+        carousel.style.height = `${maxHeight}px`; // Set the carousel height
+      };
+  
+      // Ensure images are loaded before adjusting height
+      // Convert HTMLCollection to an array here as well to use forEach
+      const imgsArray = Array.from(imgElements);
+      imgsArray.forEach((img) => {
+        if (img.complete) {
+          adjustHeight();
+        } else {
+          img.onload = adjustHeight;
+        }
+      });
+    }
+  }, [images]); // Dependency array to re-run the effect if images change
+  
+  
 
   return (
-    <div className="flex space-x-4">
-      {images.map((image, index) => (
-        <img
-          key={index}
-          src={image || '/default.avif'}
-          alt={`Image ${index + 1}`}
-          className="rounded-2xl h-auto object-cover w-1/4"
-        />
+    <div ref={carouselRef} className="relative w-full overflow-hidden" data-carousel="slide">
+      {images.map((imgSrc, index) => (
+        <div key={index} className={`absolute w-full transition-opacity duration-700 ease-in-out ${index === activeSlide ? 'opacity-100' : 'opacity-0'}`}>
+          <img src={imgSrc} className="w-1/4 object-contain" alt={`Carousel image ${index + 1}`} />
+        </div>
       ))}
+      <div className="absolute z-30 flex w-full bottom-0 pb-2">
+        {images.map((_, index) => (
+          <button
+            key={index}
+            type="button"
+            className={`w-5 h-5 rounded-full mx-1 ${index === activeSlide ? 'bg-white' : 'bg-gray-400'}`}
+            aria-current={index === activeSlide ? "true" : "false"}
+            aria-label={`Slide ${index + 1}`}
+            onClick={() => selectSlide(index)}
+          ></button>
+        ))}
+      </div>
     </div>
   );
 }
+
+
+
+
 
 const itinerary = [{
   day: "June 15th, 2024",
@@ -40,7 +96,8 @@ const itinerary = [{
     {
       title: "Arrival in Bangkok",
       description: "3:00PM Arrival at Bangkok's Suvarnabhumi Airport followed by a private transfer to your hotel.",
-      image: "/arrival.webp"
+      image: ["/arrival.webp", "/PHOTO-2023-12-28-20-53-50.jpg", "/PHOTO-2023-12-28-21-06-16.jpg", "/PHOTO-2023-12-28-21-06-28.jpg"]
+      
     },
     {
       title: "Dinner in Chinatown",
@@ -55,7 +112,7 @@ const itinerary = [{
     {
       title: "Damnoen Saduak Floating Market",
       description: "Start with a visit to Damnoen Saduak Floating Market, known for its vibrant atmosphere and colorful vendors.",
-      image: "/damnoen-saduak-floating.jpeg"
+      image: ["/damnoen-saduak-floating.jpeg", "/floating2.jpeg"]
     },
     {
       title: "Mae Klong Railway Market",
@@ -64,8 +121,8 @@ const itinerary = [{
     },
     {
       title: "Anniversary Dinner at Saneh Jaan",
-      description: "Conclude the day with a special anniversary dinner at Saneh Jaan, known for its traditional Thai cuisine.",
-      image: "/saan.jpeg"
+      description: "Conclude the day with a special anniversary dinner at Michelen Star Restuarant Saneh Jaan, known for its traditional Thai cuisine",
+      image: ["/saan.jpeg", "/saan2.jpeg"]
     }
   ]
 }, {
@@ -74,22 +131,22 @@ const itinerary = [{
     {
       title: "The Grand Palace",
       description: "Morning visit to The Grand Palace, the official residence of the Kings of Siam.",
-      image: "/grand.jpeg"
+      image: ["/grand.jpeg", "/grand.webp"]
     },
     {
-      title: "Wat Pho",
+      title: "Wat Phra",
       description: "Explore Wat Phra Chetuphon, known for its giant reclining Buddha.",
-      image: "/watpho.jpeg"
+      image: ["/watpho.jpeg", "/whatpho2.jpeg"] 
     },
     {
       title: "Wat Traimit",
       description: "Visit Wat Traimit, the Temple of the Golden Buddha.",
-      image: "/traimit.jpeg"
+      image: ["/traimit.jpeg", "/WatTraimit.jpeg"]
     },
     {
       title: "Thanon Khao San",
       description: "Conclude the day with a stroll through Thanon Khao San, known as the backpacker's haven.",
-      image: "/khaosan-road.webp"
+      image: ["/khaosan-road.webp", "/kha.jpeg"]
     }
   ]
 }, {
@@ -304,7 +361,7 @@ export default function Home() {
                 <div key={activityIndex}>
                   <h3 className="text-lg mt-7 font-semibold text-gray-900 dark:text-white">{activity.title}</h3>
                   <p className="mb-2 text-base font-normal text-gray-500 dark:text-gray-400">{activity.description}</p>
-                  <ImageRow activity={activity} />
+                  <Carousel activity={activity} />
                 </div>
               ))}
             </li>
