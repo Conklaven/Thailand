@@ -51,7 +51,7 @@ function Carousel({ activity }: { activity: Activity }) {
   useEffect(() => {
     const interval = setInterval(() => {
       setActiveSlide((prevActiveSlide) => (prevActiveSlide + 1) % images.length);
-    }, 2000); // Change slide every 2000 milliseconds
+    }, 4000); // Change slide every 2000 milliseconds
 
     // Clear interval when component unmounts or images change
     return () => clearInterval(interval);
@@ -122,7 +122,7 @@ const itinerary = [{
     {
       title: "Mae Klong Railway Market",
       description: "Explore Mae Klong, famous for its railway market where vendors quickly retract their awnings and goods every time a train passes through.",
-      image: "/rail.webp"
+      image: ["/rail.webp", "/klong2.jpeg", "/klong3.jpeg", "/klong4.jpeg"]
     },
     {
       title: "Anniversary Dinner at Saneh Jaan",
@@ -166,18 +166,18 @@ const itinerary = [{
     {
       title: "Wat Chedi Luang",
       description: "Visit Wat Chedi Luang, known for its ancient ruins and towering stupa.",
-      image: ["/WatChediLuang.jpeg"] 
+      image: ["/WatChediLuang.jpeg","/chedi2.jpeg", "/chedi4.jpeg"] 
     },
     {
       title: "Neng Earthen Jar Roast Pork",
       description: "Enjoy a delicious lunch at Neng Earthen Jar Roast Pork, known for its local cuisine.",
-      image: ["/Neng-Earthen-Jar-Roast-Pork-4.jpeg"] 
+      image: ["/Neng-Earthen-Jar-Roast-Pork-4.jpeg", "/pork2.jpeg", "/pork1.jpeg", "/pork4.jpeg"] 
     },
 
     {
       title: "Visit the Chiang Mai Night Bazaar",
       description: "Explore the vibrant Chiang Mai Night Bazaar, known for its local crafts, food, and entertainment.",
-      image: ["/chiangMaiNight.webp"] 
+      image: ["/chiangMaiNight.webp", "/night2.jpeg", "/night3.jpeg", "/night4.jpeg"] 
     }
   ]
 }, {
@@ -191,17 +191,17 @@ const itinerary = [{
     {
       title: "Huen Phen",
       description: "Enjoy a traditional Northern Thai lunch at Huen Phen, known for its authentic cuisine.",
-      image: ["/huen-phen.jpg"]
+      image: ["/huen-phen.jpg", "/phen2.jpeg", "/phen3.jpeg"]
     },
     {
       title: "Chang Phueak Pork Leg Rice",
       description: "Savor a delicious dinner at Chang Phueak Pork Leg Rice, known for its local specialties.",
-      image: ["/Khao-Kha-Moo.jpg"]
+      image: ["/Khao-Kha-Moo.jpg", "/leg2.jpeg", "/leg3.jpeg", "/leg4.jpeg"]
     },
     {
       title: "Chiang Mai Cabaret Show",
       description: "Enjoy an evening at the Chiang Mai Cabaret Show, featuring colorful performances and entertainment.",
-      image: ["/caberet.jpeg"]
+      image: ["/caberet.jpeg", "/cabaret2.jpeg", "/cabaret3.jpeg", "/cabaret4.jpeg"]
     }
   ]
 }, {
@@ -234,12 +234,12 @@ const itinerary = [{
     {
       title: "Wat Tham Seua (Tiger Cave Temple)",
       description: "Explore the spiritual site of Wat Tham Seua, set amidst lush jungle.",
-      image: "/tigercave.jpeg"
+      image: ["/tigercave.jpeg", "/tiger2.jpeg", "/tiger3.jpeg", "/tiger4.jpeg"]
     }, 
     {
       title: "Krabi Town Night Market",
       description: "Conclude the day with a visit to the Krabi Town Night Market, known for its local food and vibrant atmosphere.",
-      image: "/krabi-town-market.jpg"
+      image: ["/krabi-town-market.jpg", "/krabinight2.png", "/krabinight3.jpeg"]
     }
   ]
 }, {
@@ -248,12 +248,12 @@ const itinerary = [{
     {
       title: "Krabi 4 Island Adventure",
       description: "Embark on the Krabi 4 Island Adventure tour, visiting Ko Kai (Chicken Island), Ko Poda, Phra Nang Cave Beach, and the Tub Islands.",
-      image: ["/chicken.jpeg", "/kopoda.jpeg", "/tubislands.jpeg"]
+      image: ["/chicken.jpeg", "/kopoda.jpeg", "/tubislands.jpeg", "/cavebeach.jpeg"]
     },
     {
       title: "Ao Nang Night Market",
       description: "Explore the vibrant Ao Nang Night Market, known for its local food and lively atmosphere.",
-      image: ["/AoNangNight.webp"]
+      image: ["/AoNangNight.webp","/aonang2.jpeg", "/aonang3.jpeg", "/aonang4.webp"]
     }
   ]
 }, {
@@ -262,7 +262,7 @@ const itinerary = [{
     {
       title: "Travel to Phuket",
       description: "Transition from Krabi to Phuket and check into the Phuket Marriott Resort & Spa Merlin Beach.",
-      image: "/merlin.avif"
+      image: ["/merlin.avif", "/merlin2.jpeg", "/merlin3.jpeg", "/merlin4.jpeg"]
     }
   ]
 }, {
@@ -271,7 +271,7 @@ const itinerary = [{
     {
       title: "ATV Tour in Phuket",
       description: "Embark on a 1.5-hour ATV tour through Phuket's landscapes, including a visit to the Big Buddha.",
-      image: ["/atv.jpeg", "/big-buddha.jpeg"]
+      image: ["/atv.jpeg", "/big-buddha.jpeg","/atv2.jpeg", "/atv3.webp"]
     }
   ]
 }, {
