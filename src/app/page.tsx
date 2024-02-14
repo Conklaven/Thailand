@@ -1,122 +1,16 @@
-'use client'
-
 import Image from "next/image";
 
 import itinerary from '../data/itinerary'
 
 
-interface Activity {
-  title: string;
-  description: string;
-  image: string | string[];
-}
-
-import React, { useState, useEffect, useRef } from "react";
-
-function Carousel({ activity }: { activity: Activity }) {
-  const images = Array.isArray(activity.image) ? activity.image : [activity.image];
-  const [activeSlide, setActiveSlide] = useState(0);
-  const carouselRef = useRef<HTMLDivElement>(null);
-
-  // Function to set active slide
-  const selectSlide = (index: number) => {
-    setActiveSlide(index);
-  };
-
-  useEffect(() => {
-    const carousel = carouselRef.current;
-    if (carousel) {
-      const imgElements = carousel.getElementsByTagName('img');
-      const adjustHeight = () => {
-        let maxHeight = 0;
-        const imgs = Array.from(imgElements);
-        for (let img of imgs) {
-          if (img.offsetHeight > maxHeight) maxHeight = img.offsetHeight;
-        }
-        carousel.style.height = `${maxHeight}px`;
-      };
-
-      const imgsArray = Array.from(imgElements);
-      imgsArray.forEach((img) => {
-        if (img.complete) {
-          adjustHeight();
-        } else {
-          img.onload = adjustHeight;
-        }
-      });
-    }
-  }, [images]);
-
-  // Automatically transition to the next slide every 2 seconds
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setActiveSlide((prevActiveSlide) => (prevActiveSlide + 1) % images.length);
-    }, 4000); // Change slide every 2000 milliseconds
-
-    // Clear interval when component unmounts or images change
-    return () => clearInterval(interval);
-  }, [images]);
-  
-  
-
-  return (
-    <div ref={carouselRef} className="relative w-full overflow-hidden" data-carousel="slide">
-      {images.map((imgSrc, index) => (
-        <div key={index} className={`absolute w-full transition-opacity duration-700 ease-in-out ${index === activeSlide ? 'opacity-100' : 'opacity-0'}`}>
-          <img src={imgSrc} className="md:w-1/4 w-1/2 object-contain" alt={`Carousel image ${index + 1}`} />
-        </div>
-      ))}
-      <div className="absolute z-30 flex w-full bottom-0 pb-2">
-        {images.map((_, index) => (
-          <button
-            key={index}
-            type="button"
-            className={`w-5 h-5 rounded-full mx-1 ${index === activeSlide ? 'bg-white' : 'bg-gray-400'}`}
-            aria-current={index === activeSlide ? "true" : "false"}
-            aria-label={`Slide ${index + 1}`}
-            onClick={() => selectSlide(index)}
-          ></button>
-        ))}
-      </div>
-    </div>
-  );
-}
-
-
-
-
-
-
-
+import { useState, useEffect } from "react";
+import Carousel from "../components/Carousel.client";
+import viewTracking from "../components/viewTracking";
 
 export default function Home() {
-  // State to track elements that are in view
-  const [inView, setInView] = useState<number[]>([]);
 
-
-  useEffect(() => {
-    const handleScroll = () => {
-      document.querySelectorAll('.fade-in').forEach((el, index) => {
-        const rect = el.getBoundingClientRect();
-        if (rect.top < window.innerHeight) {
-          // Add index of element to 'inView' state if it's in the viewport
-          if (!inView.includes(index)) {
-            setInView([...inView, index]);
-          }
-        }
-      });
-    };
-
-    // Register the scroll event listener
-    window.addEventListener('scroll', handleScroll);
-
-    // Initial check to see if any elements are in view on load
-    handleScroll();
-
-    // Clean up the event listener
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, [inView]); // Dependency array includes 'inView' to update the listener when the state changes
-
+  viewTracking
+ 
   return (
     <main className="relative min-h-screen flex flex-col items-center justify-between md:p-24 p-1">
       {/* Gradient Overlay */}

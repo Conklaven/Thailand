@@ -1,38 +1,74 @@
-import React, { useState } from "react";
-
+'use client'
 interface Activity {
-    title: string;
-    description: string;
-    image: string | string[];
-  }
+  title: string;
+  description: string;
+  image: string | string[];
+}
 
-function ImageRow({ activity }: { activity: Activity }) {
+import React, { useState, useEffect, useRef } from "react";
+
+function Carousel({ activity }: { activity: Activity }) {
   const images = Array.isArray(activity.image) ? activity.image : [activity.image];
-  const [activeSlide, setActiveSlide] = useState(0); // State to track the active slide
+  const [activeSlide, setActiveSlide] = useState(0);
+  const carouselRef = useRef<HTMLDivElement>(null);
 
+  // Function to set active slide
   const selectSlide = (index: number) => {
-    setActiveSlide(index); // Function to set active slide
+    setActiveSlide(index);
   };
 
+  useEffect(() => {
+    const carousel = carouselRef.current;
+    if (carousel) {
+      const imgElements = carousel.getElementsByTagName('img');
+      const adjustHeight = () => {
+        let maxHeight = 0;
+        const imgs = Array.from(imgElements);
+        for (let img of imgs) {
+          if (img.offsetHeight > maxHeight) maxHeight = img.offsetHeight;
+        }
+        carousel.style.height = `${maxHeight}px`;
+      };
+
+      const imgsArray = Array.from(imgElements);
+      imgsArray.forEach((img) => {
+        if (img.complete) {
+          adjustHeight();
+        } else {
+          img.onload = adjustHeight;
+        }
+      });
+    }
+  }, [images]);
+
+  // Automatically transition to the next slide every 2 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveSlide((prevActiveSlide) => (prevActiveSlide + 1) % images.length);
+    }, 4000); // Change slide every 2000 milliseconds
+
+    // Clear interval when component unmounts or images change
+    return () => clearInterval(interval);
+  }, [images]);
+  
+  
+
   return (
-    <div className="relative w-full" data-carousel="slide">
-      <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
-        {images.map((imgSrc, index) => (
-          <div key={index} className={`duration-700 ease-in-out ${index === activeSlide ? 'block' : 'hidden'}`} data-carousel-item>
-            <img src={imgSrc} className="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt={`Carousel image ${index + 1}`} />
-          </div>
-        ))}
-      </div>
-      {/* Updated slider indicators */}
-      <div className="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+    <div ref={carouselRef} className="relative w-full overflow-hidden" data-carousel="slide">
+      {images.map((imgSrc, index) => (
+        <div key={index} className={`absolute w-full transition-opacity duration-700 ease-in-out ${index === activeSlide ? 'opacity-100' : 'opacity-0'}`}>
+          <img src={imgSrc} className="md:w-1/4 w-1/2 object-contain" alt={`Carousel image ${index + 1}`} />
+        </div>
+      ))}
+      <div className="absolute z-30 flex w-full bottom-0 pb-2">
         {images.map((_, index) => (
           <button
             key={index}
             type="button"
-            className={`w-3 h-3 rounded-full ${index === activeSlide ? 'bg-white' : 'bg-gray-400'}`} // Highlight the active indicator
+            className={`w-5 h-5 rounded-full mx-1 ${index === activeSlide ? 'bg-white' : 'bg-gray-400'}`}
             aria-current={index === activeSlide ? "true" : "false"}
             aria-label={`Slide ${index + 1}`}
-            onClick={() => selectSlide(index)} // Set the selected slide as active when clicked
+            onClick={() => selectSlide(index)}
           ></button>
         ))}
       </div>
@@ -40,4 +76,4 @@ function ImageRow({ activity }: { activity: Activity }) {
   );
 }
 
-export default ImageRow;
+export default Carousel;
