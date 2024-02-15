@@ -5,9 +5,14 @@ interface Activity {
   image: string | string[];
 }
 
+interface CarouselProps {
+  activity: Activity;
+  imageSizeClass: string; // New prop for image size
+}
+
 import React, { useState, useEffect, useRef } from "react";
 
-function Carousel({ activity }: { activity: Activity }) {
+function Carousel({ activity, imageSizeClass }: CarouselProps) {
   const images = Array.isArray(activity.image) ? activity.image : [activity.image];
   const [activeSlide, setActiveSlide] = useState(0);
   const carouselRef = useRef<HTMLDivElement>(null);
@@ -57,7 +62,7 @@ function Carousel({ activity }: { activity: Activity }) {
     <div ref={carouselRef} className="relative w-full overflow-hidden" data-carousel="slide">
       {images.map((imgSrc, index) => (
         <div key={index} className={`absolute w-full transition-opacity duration-700 ease-in-out ${index === activeSlide ? 'opacity-100' : 'opacity-0'}`}>
-          <img src={imgSrc} className="md:w-1/4 w-1/2 object-contain" alt={`Carousel image ${index + 1}`} />
+          <img src={imgSrc} className={`${imageSizeClass} object-contain`} alt={`Carousel image ${index + 1}`} />
         </div>
       ))}
       <div className="absolute z-30 flex w-full bottom-0 pb-2">
