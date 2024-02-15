@@ -1,15 +1,21 @@
+'use client'
+
 import Image from "next/image";
 
 import itinerary from '../data/itinerary'
 
 
-import { useState, useEffect } from "react";
-import Carousel from "../components/Carousel.client";
-import viewTracking from "../components/viewTracking";
+import Carousel from "../components/Carousel.client"
+
+import ThailandNews from "./thailand_news";
+
+
+
 
 export default function Home() {
 
-  viewTracking
+  
+
  
   return (
     <main className="relative min-h-screen flex flex-col items-center justify-between md:p-24 p-1">
@@ -50,6 +56,8 @@ export default function Home() {
             </li>
           ))}
       </ol>
+      
+      <ThailandNews />
     </main>
   );
 }
