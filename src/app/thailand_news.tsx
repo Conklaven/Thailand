@@ -71,7 +71,7 @@ export default function ThailandNews() {
                                 'X-RapidAPI-Host': 'google-api31.p.rapidapi.com'
                             },
                             body: JSON.stringify({
-                                text: address,
+                                text: `${address}%20thailand`, // Append 'thailand' to the address
                                 safesearch: 'off',
                                 region: 'wt-wt',
                                 color: '',
@@ -121,7 +121,7 @@ export default function ThailandNews() {
                                     description: `Location: ${feature.properties.address_line2}...`, // Constructed description
                                     image: feature.images
                                 }}
-                                imageSizeClass="md:w-full w-1/2" // Custom image size class
+                                imageSizeClass="md:w-full w-full" // Custom image size class
                             />
                         )}
                     </div>
