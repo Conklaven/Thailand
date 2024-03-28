@@ -264,7 +264,7 @@ const itinerary = [{
         ]
       }, {
         day: "June 26th, 2024",
-        desc: "Exploring Phuket Optinal Activities",
+        desc: "Exploring Phuket Optional Activities",
         hotel: "Phuket Marriott Resort & Spa Merlin Beach",
         hotel_link: links["Phuket Marriott Resort & Spa Merlin Beach"],
         activities: [
