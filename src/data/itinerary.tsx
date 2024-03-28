@@ -166,11 +166,6 @@ const itinerary = [{
             title: "Chiang Mai Cabaret Show",
             description: "Enjoy an evening at the Chiang Mai Cabaret Show, featuring colorful performances and entertainment.",
             image: ["/caberet.jpeg", "/cabaret2.jpeg", "/cabaret3.jpeg", "/cabaret4.jpeg"]
-          },
-          {
-            title: "Cowboy Hat Lady",
-            description: "Visit the famous Cowboy Hat Lady for a late-night snack of stir-fried noodles.",
-            image: ["/hat_lady.jpeg"]
           }
         ]
       }, {
