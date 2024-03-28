@@ -57,3 +57,16 @@ body {
   opacity: 1 !important;
 }
 
+.circle-line::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  width: calc(100% + 20px);
+  height: 1px;
+  background: #374151;
+}
+
+.circle-line {
+  left: 28px !important;
+}

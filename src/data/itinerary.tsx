@@ -26,7 +26,7 @@ const itinerary = [{
           {
             title: "Jodd Fairs Night Market",
             description: "Explore the vibrant Jodd Fairs Night Market, known for its street food and local crafts.",
-            image: []  
+            image: ['IMG_2006.JPG']  
 
           }
         ]
@@ -69,7 +69,7 @@ const itinerary = [{
           },
           { title: "Wat Arun",
             description: "Visit Wat Arun, the Temple of Dawn, known for its stunning riverside views.",
-            image: []
+            image: ['/IMG_2012.JPG', '/IMG_2013.JPG', '/IMG_2014.WEBP']
           },
           {
             title: "Wat Traimit",
@@ -78,12 +78,12 @@ const itinerary = [{
           },
           { title: "Saket Temple",
             description: "Climb the Golden Mount at Wat Saket for panoramic views of Bangkok.",
-            image: []
+            image: ['/IMG_2008.JPG', '/IMG_2009.JPG']
           },
           {
             title: "Anniversary Dinner at R-Haan",
             description: "Conclude the day with a special anniversary dinner at R-Haan, a Michelin-starred restaurant known for its authentic Thai cuisine.",
-            image: []
+            image: ['/IMG_2010.JPG', '/IMG_2011.JPG']
           }
 
         ]
@@ -95,17 +95,18 @@ const itinerary = [{
             description: "Catch a flight from Bangkok to Chiang Mai with AirAsia, departing at 11:25 AM and arriving at 12:40 PM. Check into the U Chiang Mai Hotel upon arrival.",
             image: ["/takeoff.webp", "/uchiang.jpeg"] 
           },
-          { title: "lunch at Huen Phen",
+          {
+            title: "Huen Phen",
             description: "Enjoy a traditional Northern Thai lunch at Huen Phen, known for its authentic cuisine.",
-            image: []
+            image: ["/huen-phen.jpg", "/phen2.jpeg", "/phen3.jpeg"]
           },
           { title: "Wat Phan On",
             description: "Visit Wat Phan On, a beautiful temple in the heart of Chiang Mai.",
-            image: []
+            image: ['/IMG_2025.JPG']
           },
           { title: "Wat Phra That Doi Suthep",
             description: "Explore Wat Phra That Doi Suthep, a sacred temple atop Doi Suthep mountain.",
-            image: []
+            image: ['/IMG_2026.JPG', '/IMG_2027.JPG']
           },
           {
             title: "Wat Chedi Luang",
@@ -117,11 +118,14 @@ const itinerary = [{
             description: "Enjoy a delicious lunch at Neng Earthen Jar Roast Pork, known for its local cuisine.",
             image: ["/Neng-Earthen-Jar-Roast-Pork-4.jpeg", "/pork2.jpeg", "/pork1.jpeg", "/pork4.jpeg"] 
           },
-      
           {
             title: "Visit the Chiang Mai Night Bazaar",
             description: "Explore the vibrant Chiang Mai Night Bazaar, known for its local crafts, food, and entertainment.",
             image: ["/chiangMaiNight.webp", "/night2.jpeg", "/night3.jpeg", "/night4.jpeg"] 
+          },
+          { title: "Late night snack at Kha Soi Lung Prakit Kad Kom",
+            description: "Conclude the day with a late-night snack at Kha Soi Lung Prakit Kad Kom, known for its delicious khao soi.",
+            image: []
           }
         ]
       }, {
@@ -133,19 +137,20 @@ const itinerary = [{
             image: ["/elephants.jpeg", "/maerim2.webp", "/maerim3.jpeg"]
           },
           {
-            title: "Huen Phen",
-            description: "Enjoy a traditional Northern Thai lunch at Huen Phen, known for its authentic cuisine.",
-            image: ["/huen-phen.jpg", "/phen2.jpeg", "/phen3.jpeg"]
-          },
-          {
             title: "Chang Phueak Pork Leg Rice",
             description: "Savor a delicious dinner at Chang Phueak Pork Leg Rice, known for its local specialties.",
             image: ["/Khao-Kha-Moo.jpg", "/leg2.jpeg", "/leg3.jpeg", "/leg4.jpeg"]
           },
+
           {
             title: "Chiang Mai Cabaret Show",
             description: "Enjoy an evening at the Chiang Mai Cabaret Show, featuring colorful performances and entertainment.",
             image: ["/caberet.jpeg", "/cabaret2.jpeg", "/cabaret3.jpeg", "/cabaret4.jpeg"]
+          },
+          {
+            title: "Cowboy Hat Lady",
+            description: "Visit the famous Cowboy Hat Lady for a late-night snack of stir-fried noodles.",
+            image: ["/hat_lady.jpeg"]
           }
         ]
       }, {
