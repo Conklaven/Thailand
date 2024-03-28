@@ -247,6 +247,11 @@ const itinerary = [{
             title: "Travel to Phuket",
             description: "Transition from Krabi to Phuket and check into the Phuket Marriott Resort & Spa Merlin Beach.",
             image: ["/merlin.avif", "/merlin2.jpeg", "/merlin3.jpeg", "/merlin4.jpeg"]
+          },
+          {
+            title: "Relax at the Hotel",
+            description: "Spend the afternoon relaxing at the hotel, enjoying the beach and amenities.",
+            image: []
           }
         ]
       }, {
@@ -257,13 +262,18 @@ const itinerary = [{
         activities: [
           {
             title: "ATV Tour in Phuket",
-            description: "Embark on a 1.5-hour ATV tour through Phuket's landscapes, including a visit to the Big Buddha.",
+            description: "Embark on a 1.5-hour Family ATV tour through Phuket's landscapes, including a visit to the Big Buddha.",
             image: ["/atv.jpeg", "/big-buddha.jpeg","/atv2.jpeg", "/atv3.webp"]
+          },
+          {
+            title: "Afternoon at Resort",
+            description: "Spend the afternoon at the resort, enjoying the pool and beachfront.",
+
           }
         ]
       }, {
         day: "June 26th, 2024",
-        desc: "Exploring Phuket",
+        desc: "Exploring Phuket Optinal Activities",
         hotel: "Phuket Marriott Resort & Spa Merlin Beach",
         hotel_link: links["Phuket Marriott Resort & Spa Merlin Beach"],
         activities: [
@@ -281,6 +291,10 @@ const itinerary = [{
             title: "Bangla Road Nightlife",
             description: "Explore the vibrant nightlife of Bangla Road, with its bustling bars and street performances.",
             image: ["/bangla.jpeg", "/bangla2.avif"]
+          }, 
+          {
+            title: "Naughty Nuri's",
+            description: "Enjoy a delicious dinner at Naughty Nuri's, known for its BBQ ribs and lively atmosphere.",
           }
         ]
       }, {
@@ -293,6 +307,14 @@ const itinerary = [{
             title: "James Bond Island Tour",
             description: "Enjoy the James Bond Island tour, including visits to the renowned James Bond Island, Hong Island, and Panyee Island.",
             image: ["/jamesbond.jpeg", "/hongisland.jpeg", "/panyee.jpeg"]
+          },
+          { 
+            title: "Afternoon at the Resort",
+            description: "Relax at the resort, enjoying the beach and amenities.",
+          },
+          {
+            title: "Malin Plaza Night Market",
+            description: "Visit the Malin Plaza Night Market for local food and shopping.",
           }
         ]
       }, {
@@ -305,6 +327,10 @@ const itinerary = [{
             title: "Old Phuket Town",
             description: "Explore Old Phuket Town, known for its Sino-Portuguese architecture and vibrant streets.",
             image: ["/oldPhuket.jpeg", "/old2.webp", "/old3.jpeg"]
+          },
+          {
+            title: "Simon Cabaret Show",
+            description: "Enjoy an evening at the Simon Cabaret Show, featuring dazzling performances and entertainment.",
           }
         ]
       }, {
@@ -319,9 +345,17 @@ const itinerary = [{
             image: "/intercont.webp"
           },
           {
-            title: "Dinner at Raan Jay Fai",
+            title: "Visit Raan Jay Fai",
             description: "Conclude the trip with a memorable dinner at Raan Jay Fai, a Michelin-starred street food restaurant.",
             image: ["/raan.jpeg", "/raan2.jpeg", "/raan3.jpeg"]
+          },
+          {
+            title: "Dinner at Phra Nakhon",
+            description: "Enjoy a farewell dinner at Michelin Reccomended Phra Nakhon, known for its traditional Thai cuisine and beautiful setting.",
+          },
+          {
+            title: "Night at the Asiatique Riverfront",
+            description: "Spend the evening at the Asiatique Riverfront, a vibrant night market and entertainment complex.",
           }
         ]
       }, {
@@ -329,8 +363,20 @@ const itinerary = [{
         desc: "Departure Day",
         activities: [
           {
-            title: "Back To Israel",
-            description: "Prepare for departure, reflecting on the incredible experiences in Thailand. Flight departs from Bangkok to Tel Aviv, concluding the memorable trip.",
+            title: "Chatuchak Weekend Market",
+            description: "Explore the vibrant Chatuchak Weekend Market, known for its wide range of products and local finds.",
+          },
+          {
+            title: "Lunch at Kalyana Restaurant",
+            description: "Enjoy a farewell lunch at Kalyana Restaurant, known for its authentic Thai cuisine.",
+          },
+          {
+            title: "Fun and Shopping at Iconsiam",
+            description: "Spend the afternoon at Iconsiam, a luxury shopping mall with a variety of stores and entertainment options.",
+          },
+          {
+            title: "Late Night Flight To Tel Aviv",
+            description: "Prepare for departure, reflecting on the incredible experiences in Thailand. Flight departs from Bangkok at 11:55PM to Tel Aviv, concluding the memorable trip.",
             image: "/leaving.webp"
           }
         ]

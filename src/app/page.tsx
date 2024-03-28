@@ -59,7 +59,7 @@ export default function Home() {
                 <h3 className="text-lg mt-7 font-semibold text-gray-900 dark:text-white">{activity.title}</h3>
                 <p className="mb-2 text-base font-normal text-gray-500 dark:text-gray-400">{activity.description}</p>
                 {/* Make sure the Carousel is receiving the activity in the expected format */}
-                <Carousel activity={activity} imageSizeClass="md:w-1/4 w-1/2" /> {/* Add the imageSizeClass prop if needed */}
+                {activity.image && <Carousel activity={activity} imageSizeClass="md:w-1/4 w-1/2" />}
               </div>
             ))}
           </li>
