@@ -95,8 +95,8 @@ const itinerary = [{
             image: ['/IMG_2008.JPG', '/IMG_2009.JPG']
           },
           {
-            title: "Anniversary Dinner at R-Haan",
-            description: "Conclude the day with a special anniversary dinner at R-Haan, a Michelin-starred restaurant known for its authentic Thai cuisine.",
+            title: "Anniversary Dinner at R-Haan a 2 Star Michelin Restaurant",
+            description: "Conclude the day with a special anniversary dinner at R-Haan, a known for its authentic Thai cuisine.",
             image: ['/IMG_2010.JPG', '/IMG_2011.JPG']
           }
 
@@ -126,11 +126,6 @@ const itinerary = [{
             image: ['/IMG_2026.JPG', '/IMG_2027.JPG']
           },
           {
-            title: "Wat Chedi Luang",
-            description: "Visit Wat Chedi Luang, known for its ancient ruins and towering stupa.",
-            image: ["/WatChediLuang.jpeg","/Chedi2.jpeg", "/Chedi4.jpeg"] 
-          },
-          {
             title: "Neng Earthen Jar Roast Pork",
             description: "Enjoy a delicious lunch at Neng Earthen Jar Roast Pork, known for its local cuisine.",
             image: ["/Neng-Earthen-Jar-Roast-Pork-4.jpeg", "/pork2.jpeg", "/pork1.jpeg", "/pork4.jpeg"] 
@@ -141,8 +136,8 @@ const itinerary = [{
             image: ["/chiangMaiNight.webp", "/night2.jpeg", "/night3.jpeg", "/night4.jpeg"] 
           },
           { title: "Late night snack at Kha Soi Lung Prakit Kad Kom",
-            description: "Conclude the day with a late-night snack at Kha Soi Lung Prakit Kad Kom, known for its delicious khao soi.",
-            image: []
+            description: "Conclude the day with a late-night snack at Kha Soi Lung Prakit Kad Kom, a Michelin Recognized restuarant.",
+            image: ["/Khao Soi 1.webp"]
           }
         ]
       }, {
@@ -175,9 +170,24 @@ const itinerary = [{
         hotel_link: links["Holiday Ao Nang Beach Resort Krabi"],
         activities: [
           {
-            title: "Chom Cafe & Restaurant",
-            description: "Enjoy a leisurely breakfast at Chom Cafe & Restaurant, known for its scenic views and delicious cuisine.",
-            image: ["/chom.jpeg", "/chom2.jpeg"]
+            title: "Wat Chedi Luang",
+            description: "Visit Wat Chedi Luang, known for its ancient ruins and towering stupa.",
+            image: ["/WatChediLuang.jpeg","/Chedi2.jpeg", "/Chedi4.jpeg"] 
+          },
+          {
+            title: "Wat Phra Singh",
+            description: "Explore Wat Phra Singh, a beautiful temple in the heart of Chiang Mai.",
+            image: ["/singh.jpeg", "/singh2.png"]
+          },
+          {
+            title: "Sapun Fried Chicken",
+            description: "Savor a delicious lunch at Sapun Fried Chicken, a local favorite.",
+            image: ["/sapun.jpeg"]
+          },
+          {
+            title: "Wat Suan dok",
+            description: "Visit Wat Suan dok, a beautiful temple in Chiang Mai.",
+            image: ["/suan.jpeg", "/suan2.jpeg"]
           },
           {
             title: "Flight to Krabi",
@@ -185,9 +195,10 @@ const itinerary = [{
             image: ["/takeoff2.webp", "/krabihotel.jpeg"]
           },
           {
-            title: "Lae Lay Grill",
-            description: "Enjoy a memorable dinner at Lae Lay Grill, known for its stunning views and fresh seafood.",
-            image: ["/LaeLay.jpeg"]
+            title: "Dinner at Carnivore Steak and Grill",
+            description: "Enjoy a delicious dinner at Carnivore Steak and Grill, known for its grilled specialties and cozy ambiance.",
+            image: ["/carnivore.jpeg", "/carnivore2.jpeg"]
+
           }
         ]
       }, {
@@ -231,18 +242,22 @@ const itinerary = [{
         ]
       }, {
         day: "June 24th, 2024",
-        desc: "Private Shuttle to Phuket",
+        desc: "Last Day in Krabi and Travel to Phuket",
         hotel: "Phuket Marriott Resort & Spa Merlin Beach",
         activities: [
+          { title: "Visit Maya Bay",
+            description: "Visit the iconic Maya Bay, known for its stunning turquoise waters and lush cliffs.",
+            image: ["/maya.webp", "/maya2.jpeg", "/maya3.jpeg", "/maya4.webp"]
+          },
           {
             title: "Travel to Phuket",
             description: "Transition from Krabi to Phuket and check into the Phuket Marriott Resort & Spa Merlin Beach.",
-            image: ["/merlin.avif", "/merlin2.jpeg", "/merlin3.jpeg", "/merlin4.jpeg"]
+
           },
           {
             title: "Relax at the Hotel",
             description: "Spend the afternoon relaxing at the hotel, enjoying the beach and amenities.",
-            image: []
+            image: ["/merlin.avif", "/merlin2.jpeg", "/merlin3.jpeg", "/merlin4.jpeg"]
           }
         ]
       }, {
@@ -259,6 +274,7 @@ const itinerary = [{
           {
             title: "Afternoon at Resort",
             description: "Spend the afternoon at the resort, enjoying the pool and beachfront.",
+            image: ["/merlin.avif", "/merlin2.jpeg", "/merlin3.jpeg", "/merlin4.jpeg"]
 
           }
         ]
@@ -286,6 +302,7 @@ const itinerary = [{
           {
             title: "Naughty Nuri's",
             description: "Enjoy a delicious dinner at Naughty Nuri's, known for its BBQ ribs and lively atmosphere.",
+            image: ["/naught1.jpeg"]
           }
         ]
       }, {
@@ -302,10 +319,12 @@ const itinerary = [{
           { 
             title: "Afternoon at the Resort",
             description: "Relax at the resort, enjoying the beach and amenities.",
+            image: ["/merlin.avif", "/merlin2.jpeg", "/merlin3.jpeg", "/merlin4.jpeg"]
           },
           {
             title: "Malin Plaza Night Market",
             description: "Visit the Malin Plaza Night Market for local food and shopping.",
+            image: ["/malin1.webp", "/malin2.webp"]
           }
         ]
       }, {
@@ -322,6 +341,7 @@ const itinerary = [{
           {
             title: "Simon Cabaret Show",
             description: "Enjoy an evening at the Simon Cabaret Show, featuring dazzling performances and entertainment.",
+            image: ["/simon1.jpeg", "/simon2.jpeg"]
           }
         ]
       }, {
@@ -343,10 +363,12 @@ const itinerary = [{
           {
             title: "Dinner at Phra Nakhon",
             description: "Enjoy a farewell dinner at Michelin Reccomended Phra Nakhon, known for its traditional Thai cuisine and beautiful setting.",
+            image: ["/nakhon1.jpeg", "/nakhon2.jpeg"]
           },
           {
             title: "Night at the Asiatique Riverfront",
             description: "Spend the evening at the Asiatique Riverfront, a vibrant night market and entertainment complex.",
+            image: ["/asiatique1.jpeg",  "/Asiatique3.jpeg"]
           }
         ]
       }, {
@@ -356,6 +378,7 @@ const itinerary = [{
           {
             title: "Chatuchak Weekend Market",
             description: "Explore the vibrant Chatuchak Weekend Market, known for its wide range of products and local finds.",
+            image: ["/chat.jpeg", "/chat2.jpeg", "/chat3.webp", "/chat4.jpeg"]
           },
           {
             title: "Lunch at Kalyana Restaurant",
@@ -364,6 +387,7 @@ const itinerary = [{
           {
             title: "Fun and Shopping at Iconsiam",
             description: "Spend the afternoon at Iconsiam, a luxury shopping mall with a variety of stores and entertainment options.",
+            image: ["/iconsiam.jpeg", "/iconsiam2.jpeg", "/iconsiam3.jpeg"]
           },
           {
             title: "Late Night Flight To Tel Aviv",
