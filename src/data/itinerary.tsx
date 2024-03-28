@@ -58,10 +58,6 @@ const itinerary = [{
             description: "Explore Mae Klong, famous for its railway market where vendors quickly retract their awnings and goods every time a train passes through.",
             image: ["/rail.webp", "/klong2.jpeg", "/klong3.jpeg", "/klong4.jpeg"]
           },
-          { title: "Amulet Market",
-            description: "Visit the Amulet Market, known for its wide selection of Buddhist amulets and talismans.",
-            image: []
-          },
           {
             title: "Dinner in Chinatown Night Market",
             description: "Enjoy a delicious dinner in Bangkok's vibrant Chinatown, known for its street food and lively atmosphere.",
@@ -156,7 +152,7 @@ const itinerary = [{
         hotel_link: links["U Chiang Mai Hotel"],
         activities: [
           {
-            title: "Maerim Elephant Sanctuary",
+            title: "Maerim Elephant Sanctuary *",
             description: "Half-day morning visit to Maerim Elephant Sanctuary for an intimate experience with elephants.",
             image: ["/elephants.jpeg", "/maerim2.webp", "/maerim3.jpeg"]
           },
@@ -228,7 +224,7 @@ const itinerary = [{
         hotel_link: links["Holiday Ao Nang Beach Resort Krabi"],
         activities: [
           {
-            title: "Krabi 4 Island Adventure",
+            title: "Krabi 4 Island Adventure *",
             description: "Embark on the Krabi 4 Island Adventure tour, visiting Ko Kai (Chicken Island), Ko Poda, Phra Nang Cave Beach, and the Tub Islands.",
             image: ["/chicken.jpeg", "/kopoda.jpeg", "/tubislands.jpeg", "/cavebeach.jpeg"]
           },
@@ -261,7 +257,7 @@ const itinerary = [{
         hotel_link: links["Phuket Marriott Resort & Spa Merlin Beach"],
         activities: [
           {
-            title: "ATV Tour in Phuket",
+            title: "ATV Tour in Phuket *",
             description: "Embark on a 1.5-hour Family ATV tour through Phuket's landscapes, including a visit to the Big Buddha.",
             image: ["/atv.jpeg", "/big-buddha.jpeg","/atv2.jpeg", "/atv3.webp"]
           },
@@ -304,7 +300,7 @@ const itinerary = [{
         hotel_link: links["Phuket Marriott Resort & Spa Merlin Beach"],
         activities: [
           {
-            title: "James Bond Island Tour",
+            title: "James Bond Island Tour *",
             description: "Enjoy the James Bond Island tour, including visits to the renowned James Bond Island, Hong Island, and Panyee Island.",
             image: ["/jamesbond.jpeg", "/hongisland.jpeg", "/panyee.jpeg"]
           },

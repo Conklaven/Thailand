@@ -57,14 +57,23 @@ body {
   opacity: 1 !important;
 }
 
-.circle-line-dark::after {
+.circle-line-dark {
+  left: 28px !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  .circle-line{
+    border: 1px solid #374151 !important;
+  }
+.circle-line::after {
   content: "";
   position: absolute;
   top: 50%;
   right: 100%;
   width: calc(100% + 20px);
-  height: 1px;
-  background: #374151;
+  height: 2px !important;
+  background: #374151 !important;
+}
 }
 
 .circle-line {
