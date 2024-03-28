@@ -18,11 +18,17 @@ const itinerary = [{
             
           },
           {
-            title: "Dinner in Chinatown",
-            description: "Enjoy a delicious dinner in Bangkok's vibrant Chinatown, known for its street food and lively atmosphere.",
-            image: "/chinatown.jpeg"
+            title: "Thanon Khao San",
+            description: "Conclude the day with a stroll through Thanon Khao San, known as the backpacker's haven.",
+            image: ["/khaosan-road.webp", "/kha.jpeg"]
           },
-      
+          // add another
+          {
+            title: "Jodd Fairs Night Market",
+            description: "Explore the vibrant Jodd Fairs Night Market, known for its street food and local crafts.",
+            image: []  
+
+          }
         ]
       }, {
         day: "June 17th, 2024: Private Driver for the day",
@@ -37,11 +43,16 @@ const itinerary = [{
             description: "Explore Mae Klong, famous for its railway market where vendors quickly retract their awnings and goods every time a train passes through.",
             image: ["/rail.webp", "/klong2.jpeg", "/klong3.jpeg", "/klong4.jpeg"]
           },
+          { title: "Amulet Market",
+            description: "Visit the Amulet Market, known for its wide selection of Buddhist amulets and talismans.",
+            image: []
+          },
           {
-            title: "Anniversary Dinner at Saneh Jaan",
-            description: "Conclude the day with a special anniversary dinner at Michelen Star Restuarant Saneh Jaan, known for its traditional Thai cuisine",
-            image: ["/saan.jpeg", "/saan2.jpeg"]
-          }
+            title: "Dinner in Chinatown Night Market",
+            description: "Enjoy a delicious dinner in Bangkok's vibrant Chinatown, known for its street food and lively atmosphere.",
+            image: "/chinatown.jpeg"
+          },
+
         ]
       }, {
         day: "June 18th, 2024: Private Driver for the day",
@@ -56,16 +67,25 @@ const itinerary = [{
             description: "Explore Wat Phra Chetuphon, known for its giant reclining Buddha.",
             image: ["/watpho.jpeg", "/whatpho2.jpeg"] 
           },
+          { title: "Wat Arun",
+            description: "Visit Wat Arun, the Temple of Dawn, known for its stunning riverside views.",
+            image: []
+          },
           {
             title: "Wat Traimit",
             description: "Visit Wat Traimit, the Temple of the Golden Buddha.",
             image: ["/traimit.jpeg", "/WatTraimit.jpeg"]
           },
+          { title: "Saket Temple",
+            description: "Climb the Golden Mount at Wat Saket for panoramic views of Bangkok.",
+            image: []
+          },
           {
-            title: "Thanon Khao San",
-            description: "Conclude the day with a stroll through Thanon Khao San, known as the backpacker's haven.",
-            image: ["/khaosan-road.webp", "/kha.jpeg"]
+            title: "Anniversary Dinner at R-Haan",
+            description: "Conclude the day with a special anniversary dinner at R-Haan, a Michelin-starred restaurant known for its authentic Thai cuisine.",
+            image: []
           }
+
         ]
       }, {
         day: "June 19th, 2024",
@@ -75,7 +95,18 @@ const itinerary = [{
             description: "Catch a flight from Bangkok to Chiang Mai with AirAsia, departing at 11:25 AM and arriving at 12:40 PM. Check into the U Chiang Mai Hotel upon arrival.",
             image: ["/takeoff.webp", "/uchiang.jpeg"] 
           },
-          
+          { title: "lunch at Huen Phen",
+            description: "Enjoy a traditional Northern Thai lunch at Huen Phen, known for its authentic cuisine.",
+            image: []
+          },
+          { title: "Wat Phan On",
+            description: "Visit Wat Phan On, a beautiful temple in the heart of Chiang Mai.",
+            image: []
+          },
+          { title: "Wat Phra That Doi Suthep",
+            description: "Explore Wat Phra That Doi Suthep, a sacred temple atop Doi Suthep mountain.",
+            image: []
+          },
           {
             title: "Wat Chedi Luang",
             description: "Visit Wat Chedi Luang, known for its ancient ruins and towering stupa.",

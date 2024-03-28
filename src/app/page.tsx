@@ -58,7 +58,7 @@ export default function Home() {
         ))}
       </ol>
       
-      <ThailandNews />
+      {/* <ThailandNews /> */}
     </main>
   );
 }
