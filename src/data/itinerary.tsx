@@ -1,6 +1,15 @@
+const links = {
+    "Sindhorn Midtown Hotel Bangkok": "https://www.sindhornmidtown.com/",
+    "U Chiang Mai Hotel": "https://www.uhotelsresorts.com/uchiangmai/",
+    "Holiday Ao Nang Beach Resort Krabi" : "https://holidayresortkrabi.com/",
+    "Phuket Marriott Resort & Spa Merlin Beach": "https://www.marriott.com/hotels/travel/hktmb-phuket-marriott-resort-and-spa-merlin-beach/",
+    "InterContinental Bangkok, an IHG Hotel": "https://www.ihg.com/intercontinental/hotels/us/en/bangkok/bkkhb/hoteldetail"
+    
+}
 
 const itinerary = [{
         day: "June 15th, 2024",
+        desc: "Departure Day",
         activities: [
           {
             title: "Departure from Tel Aviv to Bangkok",
@@ -10,6 +19,9 @@ const itinerary = [{
         ]
       }, {
         day: "June 16th, 2024",
+        desc: "Arrival Day",
+        hotel: "Sindhorn Midtown Hotel Bangkok",
+        hotel_link: links["Sindhorn Midtown Hotel Bangkok"],
         activities: [
           {
             title: "Arrival in Bangkok",
@@ -31,7 +43,10 @@ const itinerary = [{
           }
         ]
       }, {
-        day: "June 17th, 2024: Private Driver for the day",
+        day: "June 17th, 2024",
+        desc: "Exploring Bangkok with Private Driver",
+        hotel: "Sindhorn Midtown Hotel Bangkok",
+        hotel_link: links["Sindhorn Midtown Hotel Bangkok"],
         activities: [
           {
             title: "Damnoen Saduak Floating Market",
@@ -55,7 +70,10 @@ const itinerary = [{
 
         ]
       }, {
-        day: "June 18th, 2024: Private Driver for the day",
+        day: "June 18th, 2024",
+        desc: "Exploring Bangkok's Temples and Culinary Delights with Private Driver",
+        hotel: "Sindhorn Midtown Hotel Bangkok",
+        hotel_link: links["Sindhorn Midtown Hotel Bangkok"],
         activities: [
           {
             title: "The Grand Palace",
@@ -89,6 +107,9 @@ const itinerary = [{
         ]
       }, {
         day: "June 19th, 2024",
+        desc: "Travel Day",
+        hotel: "U Chiang Mai Hotel",
+        hotel_link: links["U Chiang Mai Hotel"],
         activities: [
           {
             title: "Travel to Chiang Mai",
@@ -130,6 +151,9 @@ const itinerary = [{
         ]
       }, {
         day: "June 20th, 2024",
+        desc: "Chiang Mai Elephant Sanctuary and Evening Entertainment",
+        hotel: "U Chiang Mai Hotel",
+        hotel_link: links["U Chiang Mai Hotel"],
         activities: [
           {
             title: "Maerim Elephant Sanctuary",
@@ -155,6 +179,9 @@ const itinerary = [{
         ]
       }, {
         day: "June 21st, 2024",
+        desc: "Chiang Mai to Krabi",
+        hotel: "Holiday Ao Nang Beach Resort Krabi",
+        hotel_link: links["Holiday Ao Nang Beach Resort Krabi"],
         activities: [
           {
             title: "Chom Cafe & Restaurant",
@@ -174,6 +201,9 @@ const itinerary = [{
         ]
       }, {
         day: "June 22nd, 2024",
+        desc: "Exploring Krabi",
+        hotel: "Holiday Ao Nang Beach Resort Krabi",
+        hotel_link: links["Holiday Ao Nang Beach Resort Krabi"],
         activities: [
           {
             title: "Phi Phi Islands",
@@ -193,6 +223,9 @@ const itinerary = [{
         ]
       }, {
         day: "June 23rd, 2024",
+        desc: "Krabi Adventures",
+        hotel: "Holiday Ao Nang Beach Resort Krabi",
+        hotel_link: links["Holiday Ao Nang Beach Resort Krabi"],
         activities: [
           {
             title: "Krabi 4 Island Adventure",
@@ -206,7 +239,9 @@ const itinerary = [{
           }
         ]
       }, {
-        day: "June 24th, 2024 : Private Transfer to Phuket",
+        day: "June 24th, 2024",
+        desc: "Private Shuttle to Phuket",
+        hotel: "Phuket Marriott Resort & Spa Merlin Beach",
         activities: [
           {
             title: "Travel to Phuket",
@@ -216,6 +251,9 @@ const itinerary = [{
         ]
       }, {
         day: "June 25th, 2024",
+        desc: "Phuket Adventures",
+        hotel: "Phuket Marriott Resort & Spa Merlin Beach",
+        hotel_link: links["Phuket Marriott Resort & Spa Merlin Beach"],
         activities: [
           {
             title: "ATV Tour in Phuket",
@@ -225,6 +263,9 @@ const itinerary = [{
         ]
       }, {
         day: "June 26th, 2024",
+        desc: "Exploring Phuket",
+        hotel: "Phuket Marriott Resort & Spa Merlin Beach",
+        hotel_link: links["Phuket Marriott Resort & Spa Merlin Beach"],
         activities: [
           {
             title: "Flying Hanuman Zipline",
@@ -244,6 +285,9 @@ const itinerary = [{
         ]
       }, {
         day: "June 27th, 2024",
+        desc: "Island Hopping in Phuket",
+        hotel: "Phuket Marriott Resort & Spa Merlin Beach",
+        hotel_link: links["Phuket Marriott Resort & Spa Merlin Beach"],
         activities: [
           {
             title: "James Bond Island Tour",
@@ -253,6 +297,9 @@ const itinerary = [{
         ]
       }, {
         day: "June 28th, 2024",
+        desc: "Jacob's Birthday in Phuket",
+        hotel: "Phuket Marriott Resort & Spa Merlin Beach",
+        hotel_link: links["Phuket Marriott Resort & Spa Merlin Beach"],
         activities: [ 
           {
             title: "Old Phuket Town",
@@ -262,6 +309,9 @@ const itinerary = [{
         ]
       }, {
         day: "June 29th, 2024",
+        desc: "Return to Bangkok",
+        hotel: "InterContinental Bangkok, an IHG Hotel",
+        hotel_link: links["InterContinental Bangkok, an IHG Hotel"],
         activities: [ 
           {
             title: "Return to Bangkok",
@@ -276,6 +326,7 @@ const itinerary = [{
         ]
       }, {
         day: "June 30th, 2024",
+        desc: "Departure Day",
         activities: [
           {
             title: "Back To Israel",

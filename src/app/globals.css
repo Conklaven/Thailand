@@ -5,7 +5,7 @@
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-end-rgb: 214, 219, 220;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -35,7 +35,7 @@ body {
 /* Add this CSS to your global stylesheet or within a <style> tag in your component file */
 
 /* Fixed gradient overlay at the bottom of the viewport */
-.gradient-overlay {
+.gradient-overlay-dark {
   position: fixed;
   bottom: 0;
   left: 0;
@@ -57,7 +57,7 @@ body {
   opacity: 1 !important;
 }
 
-.circle-line::after {
+.circle-line-dark::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -70,3 +70,19 @@ body {
 .circle-line {
   left: 28px !important;
 }
+
+.circle-line::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  width: calc(100% + 20px);
+  height: 1px;
+  background: white;
+}
+
+a {
+  color: rgb(0, 142, 189);
+  text-decoration: underline;
+}
+
