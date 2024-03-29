@@ -13,6 +13,7 @@ const itinerary = [{
         activities: [
           {
             title: "Departure from Tel Aviv to Bangkok",
+            time: "11:45 PM",
             description: "Departure on EL AL LY 81 at 11:45 PM, arriving the next day at 3:00 PM.",
             image: "/elal.webp"
           }
@@ -25,6 +26,7 @@ const itinerary = [{
         activities: [
           {
             title: "Arrival in Bangkok",
+            time: "3:00 PM",
             description: "3:00PM Arrival at Bangkok's Suvarnabhumi Airport followed by a private transfer to your hotel.",
             image: ["/arrival.webp", "/PHOTO-2023-12-28-20-53-50.jpg", "/PHOTO-2023-12-28-21-06-16.jpg", "/PHOTO-2023-12-28-21-06-28.jpg"]
             
@@ -85,17 +87,18 @@ const itinerary = [{
             description: "Visit Wat Arun, the Temple of Dawn, known for its stunning riverside views.",
             image: ['/IMG_2012.JPG', '/IMG_2013.JPG', '/IMG_2014.WEBP']
           },
-          {
-            title: "Wat Traimit",
-            description: "Visit Wat Traimit, the Temple of the Golden Buddha.",
-            image: ["/traimit.jpeg", "/WatTraimit.jpeg"]
-          },
-          { title: "Saket Temple",
-            description: "Climb the Golden Mount at Wat Saket for panoramic views of Bangkok.",
-            image: ['/IMG_2008.JPG', '/IMG_2009.JPG']
-          },
+          // {
+          //   title: "Wat Traimit",
+          //   description: "Visit Wat Traimit, the Temple of the Golden Buddha.",
+          //   image: ["/traimit.jpeg", "/WatTraimit.jpeg"]
+          // },
+          // { title: "Saket Temple",
+          //   description: "Climb the Golden Mount at Wat Saket for panoramic views of Bangkok.",
+          //   image: ['/IMG_2008.JPG', '/IMG_2009.JPG']
+          // },
           {
             title: "Anniversary Dinner at R-Haan a 2 Star Michelin Restaurant",
+            time: "8:30PM",
             description: "Conclude the day with a special anniversary dinner at R-Haan, a known for its authentic Thai cuisine.",
             image: ['/IMG_2010.JPG', '/IMG_2011.JPG']
           }
@@ -109,6 +112,7 @@ const itinerary = [{
         activities: [
           {
             title: "Travel to Chiang Mai",
+            time: "11:25 AM - 12:40 PM",
             description: "Catch a flight from Bangkok to Chiang Mai with AirAsia, departing at 11:25 AM and arriving at 12:40 PM. Check into the U Chiang Mai Hotel upon arrival.",
             image: ["/takeoff.webp", "/uchiang.jpeg"] 
           },
@@ -127,7 +131,7 @@ const itinerary = [{
           },
           {
             title: "Neng Earthen Jar Roast Pork",
-            description: "Enjoy a delicious lunch at Neng Earthen Jar Roast Pork, known for its local cuisine.",
+            description: "Enjoy a delicious dinner at Neng Earthen Jar Roast Pork, known for its local cuisine.",
             image: ["/Neng-Earthen-Jar-Roast-Pork-4.jpeg", "/pork2.jpeg", "/pork1.jpeg", "/pork4.jpeg"] 
           },
           {
@@ -148,7 +152,8 @@ const itinerary = [{
         activities: [
           {
             title: "Maerim Elephant Sanctuary *",
-            description: "Half-day morning visit to Maerim Elephant Sanctuary for an intimate experience with elephants.",
+            time: "7:00AM - 2:00PM",
+            description: "Experience the joy of connecting with elephants as you don traditional mahout attire, engage in playful interactions, and participate in mud spas and bathing sessions. Culminate your adventure by mastering the art of traditional noodle soup creation and unwinding by the pool.",
             image: ["/elephants.jpeg", "/maerim2.webp", "/maerim3.jpeg"]
           },
           {
@@ -191,6 +196,7 @@ const itinerary = [{
           },
           {
             title: "Flight to Krabi",
+            time: "4:25 PM - 6:25 PM",
             description: "Depart from Chiang Mai to Krabi with AirAsia, taking off at 4:25 PM and landing at 6:25 PM. Check into the Holiday Ao Nang Beach Resort Krabi upon arrival.",
             image: ["/takeoff2.webp", "/krabihotel.jpeg"]
           },
@@ -231,6 +237,7 @@ const itinerary = [{
         activities: [
           {
             title: "Krabi 4 Island Adventure *",
+            time: "8:00AM - 2:00PM",
             description: "Embark on the Krabi 4 Island Adventure tour, visiting Ko Kai (Chicken Island), Ko Poda, Phra Nang Cave Beach, and the Tub Islands.",
             image: ["/chicken.jpeg", "/kopoda.jpeg", "/tubislands.jpeg", "/cavebeach.jpeg"]
           },
@@ -268,6 +275,7 @@ const itinerary = [{
         activities: [
           {
             title: "ATV Tour in Phuket *",
+            time: "12:30PM - 2:00PM",
             description: "Embark on a 1.5-hour Family ATV tour through Phuket's landscapes, including a visit to the Big Buddha.",
             image: ["/atv.jpeg", "/big-buddha.jpeg","/atv2.jpeg", "/atv3.webp"]
           },
@@ -276,6 +284,11 @@ const itinerary = [{
             description: "Spend the afternoon at the resort, enjoying the pool and beachfront.",
             image: ["/merlin.avif", "/merlin2.jpeg", "/merlin3.jpeg", "/merlin4.jpeg"]
 
+          },
+          {
+            title: "Malin Plaza Night Market",
+            description: "Visit the Malin Plaza Night Market for local food and shopping.",
+            image: ["/malin1.webp", "/malin2.webp"]
           }
         ]
       }, {
@@ -313,19 +326,16 @@ const itinerary = [{
         activities: [
           {
             title: "James Bond Island Tour *",
+            time: "10:00AM - 4:00PM",
             description: "Enjoy the James Bond Island tour, including visits to the renowned James Bond Island, Hong Island, and Panyee Island.",
             image: ["/jamesbond.jpeg", "/hongisland.jpeg", "/panyee.jpeg"]
           },
-          { 
-            title: "Afternoon at the Resort",
-            description: "Relax at the resort, enjoying the beach and amenities.",
-            image: ["/merlin.avif", "/merlin2.jpeg", "/merlin3.jpeg", "/merlin4.jpeg"]
-          },
           {
-            title: "Malin Plaza Night Market",
-            description: "Visit the Malin Plaza Night Market for local food and shopping.",
-            image: ["/malin1.webp", "/malin2.webp"]
+            title: "Evening at the Resort",
+            description: "Spend the evening relaxing at the resort, enjoying the beach and amenities.",
+            image: ["/merlin.avif", "/merlin2.jpeg", "/merlin3.jpeg", "/merlin4.jpeg"]
           }
+
         ]
       }, {
         day: "June 28th, 2024",

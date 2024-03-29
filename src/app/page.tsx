@@ -8,6 +8,7 @@ import itinerary from '../data/itinerary'
 import Carousel from "../components/Carousel.client"
 
 import ThailandNews from "./thailand_news";
+import { act } from "react-dom/test-utils";
 
 
 
@@ -57,6 +58,8 @@ export default function Home() {
               <div className="ml-7" key={activityIndex}>
                 <div className="circle-line absolute w-3 h-3 bg-black rounded-full mt-1.5 -left-1.5 border border-white dark:circle-line-dark dark:border-gray-900 dark:bg-white"></div>
                 <h3 className="text-lg mt-7 font-semibold text-gray-900 dark:text-white">{activity.title}</h3>
+                {activity?.time && <time className="mb-1 text-sm font-semibold leading-none text-gray-500 dark:text-gray-400 underline">{activity.time}</time>}
+
                 <p className="mb-2 text-base font-normal text-gray-500 dark:text-gray-400">{activity.description}</p>
                 {/* Make sure the Carousel is receiving the activity in the expected format */}
                 {activity.image && <Carousel activity={activity} imageSizeClass="md:w-1/4 w-1/2" />}
