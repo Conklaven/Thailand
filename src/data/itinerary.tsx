@@ -36,7 +36,6 @@ const itinerary = [{
             description: "Conclude the day with a stroll through Thanon Khao San, known as the backpacker's haven.",
             image: ["/khaosan-road.webp", "/kha.jpeg"]
           },
-          // add another
           {
             title: "Jodd Fairs Night Market",
             description: "Explore the vibrant Jodd Fairs Night Market, known for its street food and local crafts.",
@@ -367,7 +366,7 @@ const itinerary = [{
           },
           {
             title: "Visit Raan Jay Fai",
-            description: "Conclude the trip with a memorable dinner at Raan Jay Fai, a Michelin-starred street food restaurant.",
+            description: "Visit Raan Jay Fai, a Michelin-starred street food restaurant.",
             image: ["/raan.jpeg", "/raan2.jpeg", "/raan3.jpeg"]
           },
           {
@@ -383,7 +382,7 @@ const itinerary = [{
         ]
       }, {
         day: "June 30th, 2024",
-        desc: "Departure Day",
+        desc: "Back to Tel Aviv",
         activities: [
           {
             title: "Chatuchak Weekend Market",
@@ -401,6 +400,7 @@ const itinerary = [{
           },
           {
             title: "Late Night Flight To Tel Aviv",
+            time: "11:55 PM",
             description: "Prepare for departure, reflecting on the incredible experiences in Thailand. Flight departs from Bangkok at 11:55PM to Tel Aviv, concluding the memorable trip.",
             image: "/leaving.webp"
           }
