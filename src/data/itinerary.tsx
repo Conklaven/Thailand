@@ -14,7 +14,7 @@ const itinerary = [{
           {
             title: "Departure from Tel Aviv to Bangkok",
             time: "11:45 PM",
-            description: "Departure on EL AL LY 81 at 11:45 PM, arriving the next day at 3:00 PM.",
+            description: "Departure on EL AL LY 81",
             image: "/elal.webp"
           }
         ]
@@ -27,15 +27,11 @@ const itinerary = [{
           {
             title: "Arrival in Bangkok",
             time: "3:00 PM",
-            description: "3:00PM Arrival at Bangkok's Suvarnabhumi Airport followed by a private transfer to your hotel.",
+            description: "Arrive at Bangkok's Suvarnabhumi Airport followed by a private transfer to your hotel.",
             image: ["/arrival.webp", "/PHOTO-2023-12-28-20-53-50.jpg", "/PHOTO-2023-12-28-21-06-16.jpg", "/PHOTO-2023-12-28-21-06-28.jpg"]
             
           },
-          {
-            title: "Thanon Khao San",
-            description: "Conclude the day with a stroll through Thanon Khao San, known as the backpacker's haven.",
-            image: ["/khaosan-road.webp", "/kha.jpeg"]
-          },
+
           {
             title: "Jodd Fairs Night Market",
             description: "Explore the vibrant Jodd Fairs Night Market, known for its street food and local crafts.",
@@ -86,6 +82,11 @@ const itinerary = [{
             description: "Visit Wat Arun, the Temple of Dawn, known for its stunning riverside views.",
             image: ['/IMG_2012.JPG', '/IMG_2013.JPG', '/IMG_2014.WEBP']
           },
+          {
+            title: "Thanon Khao San",
+            description: "Conclude the day with a stroll through Thanon Khao San, known as the backpacker's haven.",
+            image: ["/khaosan-road.webp", "/kha.jpeg"]
+          },
           // {
           //   title: "Wat Traimit",
           //   description: "Visit Wat Traimit, the Temple of the Golden Buddha.",
@@ -112,7 +113,7 @@ const itinerary = [{
           {
             title: "Travel to Chiang Mai",
             time: "11:25 AM - 12:40 PM",
-            description: "Catch a flight from Bangkok to Chiang Mai with AirAsia, departing at 11:25 AM and arriving at 12:40 PM. Check into the U Chiang Mai Hotel upon arrival.",
+            description: "Catch a flight from Bangkok to Chiang Mai with AirAsia, Check into the U Chiang Mai Hotel upon arrival.",
             image: ["/takeoff.webp", "/uchiang.jpeg"] 
           },
           {
@@ -196,7 +197,7 @@ const itinerary = [{
           {
             title: "Flight to Krabi",
             time: "4:25 PM - 6:25 PM",
-            description: "Depart from Chiang Mai to Krabi with AirAsia, taking off at 4:25 PM and landing at 6:25 PM. Check into the Holiday Ao Nang Beach Resort Krabi upon arrival.",
+            description: "Depart from Chiang Mai to Krabi with AirAsia, Check into the Holiday Ao Nang Beach Resort Krabi upon arrival.",
             image: ["/takeoff2.webp", "/krabihotel.jpeg"]
           },
           {
