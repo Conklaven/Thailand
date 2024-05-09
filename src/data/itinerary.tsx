@@ -48,7 +48,7 @@ const itinerary = [{
           {
             title: "Tha Kha Floating Market",
             description: "Visit Tha Kha Floating Market, known for its traditional canal-side market and local produce.",
-            image: ["thakha1.jpeg", "/thakha2.webp", "/thakha3.webp"]
+            image: ["thakah1.jpeg", "/thakha2.webp", "/thakha3.webp"]
           },
           {
             title: "Mae Klong Railway Market",
