@@ -46,14 +46,20 @@ const itinerary = [{
         hotel_link: links["Sindhorn Midtown Hotel Bangkok"],
         activities: [
           {
-            title: "Damnoen Saduak Floating Market",
-            description: "Start with a visit to Damnoen Saduak Floating Market, known for its vibrant atmosphere and colorful vendors.",
-            image: ["/damnoen-saduak-floating.jpeg", "/floating2.jpeg"]
+            title: "Tha Kha Floating Market",
+            description: "Visit Tha Kha Floating Market, known for its traditional canal-side market and local produce.",
+            image: ["thakha1.jpeg", "/thakha2.webp", "/thakha3.webp"]
           },
           {
             title: "Mae Klong Railway Market",
             description: "Explore Mae Klong, famous for its railway market where vendors quickly retract their awnings and goods every time a train passes through.",
             image: ["/rail.webp", "/klong2.jpeg", "/klong3.jpeg", "/klong4.jpeg"]
+          },
+          {
+            title: "Tiger World",
+            description: "Visit Tiger World, a sanctuary for rescued tigers where you can observe and interact with these magnificent creatures.",
+            image: ["/tiger1.jpeg", "/tiger1a.jpeg", "/tiger1b.jpeg"]
+
           },
           {
             title: "Dinner in Chinatown Night Market",
