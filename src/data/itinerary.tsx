@@ -102,11 +102,17 @@ const itinerary = [{
           //   description: "Climb the Golden Mount at Wat Saket for panoramic views of Bangkok.",
           //   image: ['/IMG_2008.JPG', '/IMG_2009.JPG']
           // },
+          // {
+          //   title: "Anniversary Dinner at R-Haan a 2 Star Michelin Restaurant",
+          //   time: "8:30PM",
+          //   description: "Conclude the day with a special anniversary dinner at R-Haan, a known for its authentic Thai cuisine.",
+          //   image: ['/IMG_2010.JPG', '/IMG_2011.JPG']
+          // }
           {
-            title: "Anniversary Dinner at R-Haan a 2 Star Michelin Restaurant",
-            time: "8:30PM",
-            description: "Conclude the day with a special anniversary dinner at R-Haan, a known for its authentic Thai cuisine.",
-            image: ['/IMG_2010.JPG', '/IMG_2011.JPG']
+            title: "Anniversary Dinner at Saneh Jaan a 1 Star Michelin Restaurant",
+            time: "7:00PM",
+            description: "Conclude the day with a special anniversary dinner at Saneh Jaan, a known for its authentic Thai cuisine.",
+            image: ["/saneh1.jpeg", "/saneh2.jpeg", "/saneh3.png", "/saneh4.png"]
           }
 
         ]
@@ -119,7 +125,7 @@ const itinerary = [{
           {
             title: "Travel to Chiang Mai",
             time: "11:25 AM - 12:40 PM",
-            description: "Catch a flight from Bangkok to Chiang Mai with AirAsia, Check into the U Chiang Mai Hotel upon arrival.",
+            description: "Catch flight AK3447 from Bangkok to Chiang Mai, Check into the U Chiang Mai Hotel upon arrival.",
             image: ["/takeoff.webp", "/uchiang.jpeg"] 
           },
           {
@@ -203,7 +209,7 @@ const itinerary = [{
           {
             title: "Flight to Krabi",
             time: "4:25 PM - 6:25 PM",
-            description: "Depart from Chiang Mai to Krabi with AirAsia, Check into the Holiday Ao Nang Beach Resort Krabi upon arrival.",
+            description: "Depart from Chiang Mai to Krabi on AirAsia AK3074, Check into the Holiday Ao Nang Beach Resort Krabi upon arrival.",
             image: ["/takeoff2.webp", "/krabihotel.jpeg"]
           },
           {
@@ -368,7 +374,8 @@ const itinerary = [{
         activities: [ 
           {
             title: "Return to Bangkok",
-            description: "Depart from Phuket to Bangkok via AirAsia, leaving Phuket at 1:25 PM and arriving in Bangkok at 2:55 PM. Check into the InterContinental Bangkok, an IHG Hotel.",
+            time: "1:25 PM - 2:55 PM",
+            description: "Depart from Phuket to Bangkok via AirAsia AK3026. Check into the InterContinental Bangkok, an IHG Hotel.",
             image: "/intercont.webp"
           },
           {
