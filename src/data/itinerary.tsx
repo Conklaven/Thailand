@@ -12,7 +12,7 @@ const itinerary = [{
         desc: "Departure Day",
         activities: [
           {
-            title: "Departure from Tel Aviv to Bangkok",
+            title: "Relax in the Dan Lounge before Departing from Tel Aviv to Bangkok",
             time: "11:45 PM",
             description: "Departure on EL AL LY 81",
             image: "/elal.webp"
@@ -125,7 +125,7 @@ const itinerary = [{
           {
             title: "Travel to Chiang Mai",
             time: "11:25 AM - 12:40 PM",
-            description: "Catch flight AK3447 from Bangkok to Chiang Mai, Check into the U Chiang Mai Hotel upon arrival.",
+            description: "Relax at the Miracle Lounge in DMK before Catching Air Asia flight 3447 from Bangkok to Chiang Mai, Check into the U Chiang Mai Hotel upon arrival.",
             image: ["/takeoff.webp", "/uchiang.jpeg"] 
           },
           {
@@ -209,7 +209,7 @@ const itinerary = [{
           {
             title: "Flight to Krabi",
             time: "4:25 PM - 6:25 PM",
-            description: "Depart from Chiang Mai to Krabi on AirAsia AK3074, Check into the Holiday Ao Nang Beach Resort Krabi upon arrival.",
+            description: "Relax in the Thai Airways Royal Orchid lounge before Departing from Chiang Mai to Krabi on AirAsia 3074, Check into the Holiday Ao Nang Beach Resort Krabi upon arrival.",
             image: ["/takeoff2.webp", "/krabihotel.jpeg"]
           },
           {
@@ -375,7 +375,7 @@ const itinerary = [{
           {
             title: "Return to Bangkok",
             time: "1:25 PM - 2:55 PM",
-            description: "Depart from Phuket to Bangkok via AirAsia AK3026. Check into the InterContinental Bangkok, an IHG Hotel.",
+            description: "Relax in Airport lounge before Departing from Phuket to Bangkok via AirAsia 3026. Check into the InterContinental Bangkok, an IHG Hotel.",
             image: "/intercont.webp"
           },
           {
