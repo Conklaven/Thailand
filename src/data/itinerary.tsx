@@ -31,6 +31,21 @@ const itinerary = [{
             image: ["/arrival.webp", "/PHOTO-2023-12-28-20-53-50.jpg", "/PHOTO-2023-12-28-21-06-16.jpg", "/PHOTO-2023-12-28-21-06-28.jpg"]
             
           },
+          {
+            title: "visit 7-11 by the hotel",
+            description: "Visit the iconic 7-11 convenience store to experience the local culture and pick up some snacks, bug spray, and other essentials.",
+
+
+          },
+          {
+            title: "Taxi to Platinum Fashion Mall",
+            time: "Closes at 8:00 PM",
+            description: "Take a taxi to the Platinum Fashion Mall, a shopping paradise known for its trendy fashion and accessories.",
+          },
+          {
+            title: "Pratunam Night Market",
+            description: "Explore the vibrant Pratunam Night Market, known for its street food and local crafts.",
+          },
 
           {
             title: "Jodd Fairs Night Market",
@@ -406,6 +421,10 @@ const itinerary = [{
           {
             title: "Lunch at Kalyana Restaurant",
             description: "Enjoy a farewell lunch at Kalyana Restaurant, known for its authentic Thai cuisine.",
+          },
+          {
+            title: "Louis Vuitton Experience",
+            description: "Experience the Louis Vuitton Maison in Bangkok, a luxury shopping destination.",
           },
           {
             title: "Fun and Shopping at Iconsiam",
