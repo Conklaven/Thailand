@@ -77,7 +77,10 @@ const itinerary = [{
 
           },
           {
-            title: "Dinner in Chinatown Night Market",
+            title: "Additional Shopping time"
+          },
+          {
+            title: "Dinner and shopping in Chinatown Night Market",
             description: "Enjoy a delicious dinner in Bangkok's vibrant Chinatown, known for its street food and lively atmosphere.",
             image: "/chinatown.jpeg"
           },
@@ -104,6 +107,9 @@ const itinerary = [{
             image: ['/IMG_2012.JPG', '/IMG_2013.JPG', '/IMG_2014.WEBP']
           },
           {
+            title: "Additional Shopping time"
+          },
+          {
             title: "Thanon Khao San",
             description: "Conclude the day with a stroll through Thanon Khao San, known as the backpacker's haven.",
             image: ["/khaosan-road.webp", "/kha.jpeg"]
@@ -117,12 +123,10 @@ const itinerary = [{
           //   description: "Climb the Golden Mount at Wat Saket for panoramic views of Bangkok.",
           //   image: ['/IMG_2008.JPG', '/IMG_2009.JPG']
           // },
-          // {
-          //   title: "Anniversary Dinner at R-Haan a 2 Star Michelin Restaurant",
-          //   time: "8:30PM",
-          //   description: "Conclude the day with a special anniversary dinner at R-Haan, a known for its authentic Thai cuisine.",
-          //   image: ['/IMG_2010.JPG', '/IMG_2011.JPG']
-          // }
+          {
+            title: "Dinner for Kids and Barry at Polo Fried Chicken Michelin Restaurant",
+            description: "Enjoy a delicious dinner at Polo Fried Chicken, a Michelin Recognized restaurant known for its crispy fried chicken.",
+          },
           {
             title: "Anniversary Dinner at Saneh Jaan a 1 Star Michelin Restaurant",
             time: "7:00PM",
@@ -142,6 +146,10 @@ const itinerary = [{
             time: "11:25 AM - 12:40 PM",
             description: "Relax at the Miracle Lounge in DMK before Catching Air Asia flight 3447 from Bangkok to Chiang Mai, Check into the U Chiang Mai Hotel upon arrival.",
             image: ["/takeoff.webp", "/uchiang.jpeg"] 
+          },
+          {
+            title: "Bolt to the U Chiang Mai Hotel",
+            description: "Take a taxi to the hotel and check in",
           },
           {
             title: "Huen Phen",
@@ -222,15 +230,18 @@ const itinerary = [{
             image: ["/suan.jpeg", "/suan2.jpeg"]
           },
           {
+            title: "Bolt to the Chiang Mai Airport",
+            description: "Take a taxi to the airport and check in for your flight to Krabi.",
+          },
+          {
             title: "Flight to Krabi",
             time: "4:25 PM - 6:25 PM",
             description: "Relax in the Thai Airways Royal Orchid lounge before Departing from Chiang Mai to Krabi on AirAsia 3074, Check into the Holiday Ao Nang Beach Resort Krabi upon arrival.",
             image: ["/takeoff2.webp", "/krabihotel.jpeg"]
           },
           {
-            title: "Dinner at Carnivore Steak and Grill",
-            description: "Enjoy a delicious dinner at Carnivore Steak and Grill, known for its grilled specialties and cozy ambiance.",
-            image: ["/carnivore.jpeg", "/carnivore2.jpeg"]
+            title: "Dinner",
+            description: "Explore local dining options in Krabi.",
 
           }
         ]
@@ -242,7 +253,7 @@ const itinerary = [{
         activities: [
           {
             title: "Phi Phi Islands",
-            description: "Visit the breathtaking Phi Phi Islands for swimming, snorkeling, and enjoying the landscapes.",
+            description: "Visit the breathtaking Phi Phi Islands for swimming, snorkeling, and enjoying the landscapes. Need to book",
             image: ["/Koh-Phi-Phi.jpg", "/phiphi.jpg"]
           },
           {
@@ -325,6 +336,11 @@ const itinerary = [{
         hotel_link: links["Phuket Marriott Resort & Spa Merlin Beach"],
         activities: [
           {
+            title: "Day at the Resort",
+            description: "Spend the day at the resort, enjoying the beach and amenities. Kids at the Kids Club.",
+
+          },
+          {
             title: "Flying Hanuman Zipline",
             description: "Experience the thrill of ziplining at Flying Hanuman, exploring Phuket's jungle canopy.",
             image: ["/flyinghanuman.jpeg", "/flying2.avif", "/flying3.jpeg"]
@@ -376,6 +392,10 @@ const itinerary = [{
             image: ["/oldPhuket.jpeg", "/old2.webp", "/old3.jpeg"]
           },
           {
+            title: "Relax at the Resort",
+            description: "Spend the day relaxing at the resort, enjoying the beach and amenities. Kids at the Kids Club.",
+          },
+          {
             title: "Simon Cabaret Show",
             description: "Enjoy an evening at the Simon Cabaret Show, featuring dazzling performances and entertainment.",
             image: ["/simon1.jpeg", "/simon2.jpeg"]
@@ -387,6 +407,15 @@ const itinerary = [{
         hotel: "InterContinental Bangkok, an IHG Hotel",
         hotel_link: links["InterContinental Bangkok, an IHG Hotel"],
         activities: [ 
+          {
+            title: "Check Out of Phuket Marriott Resort & Spa Merlin Beach",
+            description: "Prepare for departure, reflecting on the unforgettable experiences in Phuket.",
+
+          },
+          {
+            title: "Bolt to the Phuket Airport",
+            description: "Take a taxi to the airport and check in for your flight to Bangkok.",
+          },
           {
             title: "Return to Bangkok",
             time: "1:25 PM - 2:55 PM",
@@ -415,6 +444,7 @@ const itinerary = [{
         activities: [
           {
             title: "Chatuchak Weekend Market",
+            time: "9:00 AM - 6:00 PM",
             description: "Explore the vibrant Chatuchak Weekend Market, known for its wide range of products and local finds.",
             image: ["/chat.jpeg", "/chat2.jpeg", "/chat3.webp", "/chat4.jpeg"]
           },
@@ -430,6 +460,12 @@ const itinerary = [{
             title: "Fun and Shopping at Iconsiam",
             description: "Spend the afternoon at Iconsiam, a luxury shopping mall with a variety of stores and entertainment options.",
             image: ["/iconsiam.jpeg", "/iconsiam2.jpeg", "/iconsiam3.jpeg"]
+          },
+          {
+            title: "Check Out of InterContinental Bangkok and transfer to the Airport",
+            time: "7:30 PM",
+            description: "Prepare for departure, reflecting on the incredible experiences in Thailand.",
+
           },
           {
             title: "Late Night Flight To Tel Aviv",
