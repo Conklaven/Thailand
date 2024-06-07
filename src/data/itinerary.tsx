@@ -62,22 +62,19 @@ const itinerary = [{
         activities: [
           {
             title: "Tha Kha Floating Market",
+            time: "9:00 AM - 11:00 AM",
             description: "Visit Tha Kha Floating Market, known for its traditional canal-side market and local produce.",
             image: ["thakah1.jpeg", "/thakha2.webp", "/thakha3.webp"]
           },
           {
             title: "Mae Klong Railway Market",
+            time: "12:00 PM - 1:00 PM",
             description: "Explore Mae Klong, famous for its railway market where vendors quickly retract their awnings and goods every time a train passes through.",
             image: ["/rail.webp", "/klong2.jpeg", "/klong3.jpeg", "/klong4.jpeg"]
           },
           {
-            title: "Tiger World",
-            description: "Visit Tiger World, a sanctuary for rescued tigers where you can observe and interact with these magnificent creatures.",
-            image: ["/tiger1.jpeg", "/tiger1a.jpeg", "/tiger1b.jpeg"]
-
-          },
-          {
-            title: "Additional Shopping time"
+            title: "Additional Shopping time",
+            time: "2:00 PM - 4:00 PM",
           },
           {
             title: "Dinner and shopping in Chinatown Night Market",
@@ -94,35 +91,37 @@ const itinerary = [{
         activities: [
           {
             title: "The Grand Palace",
+            time: "10:00 AM",
             description: "Morning visit to The Grand Palace, the official residence of the Kings of Siam.",
             image: ["/grand.jpeg", "/grand.webp"]
           },
           {
+            title: "Lunch nearby",
+            description: "Enjoy a traditional Thai lunch at a local restaurant. Rongoos?",
+          },
+          {
             title: "Wat Phra",
+            time: "1:00 PM",
             description: "Explore Wat Phra Chetuphon, known for its giant reclining Buddha.",
             image: ["/watpho.jpeg", "/whatpho2.jpeg"] 
           },
+
+          {
+            title: "Ferry Ride on the Chao Phraya River to Wat Arun",
+            description: "Take a ferry ride on the Chao Phraya River to Wat Arun, the Temple of Dawn.",
+
+          },
           { title: "Wat Arun",
+            time: "2:30 PM",
             description: "Visit Wat Arun, the Temple of Dawn, known for its stunning riverside views.",
             image: ['/IMG_2012.JPG', '/IMG_2013.JPG', '/IMG_2014.WEBP']
           },
           {
-            title: "Additional Shopping time"
-          },
-          {
             title: "Thanon Khao San",
-            description: "Conclude the day with a stroll through Thanon Khao San, known as the backpacker's haven.",
+            time: "4:00 PM- 6:00 PM",
+            description: "Conclude the day with a stroll through Thanon Khao San, known as the backpacker's haven shopping and more",
             image: ["/khaosan-road.webp", "/kha.jpeg"]
           },
-          // {
-          //   title: "Wat Traimit",
-          //   description: "Visit Wat Traimit, the Temple of the Golden Buddha.",
-          //   image: ["/traimit.jpeg", "/WatTraimit.jpeg"]
-          // },
-          // { title: "Saket Temple",
-          //   description: "Climb the Golden Mount at Wat Saket for panoramic views of Bangkok.",
-          //   image: ['/IMG_2008.JPG', '/IMG_2009.JPG']
-          // },
           {
             title: "Dinner for Kids and Barry at Polo Fried Chicken Michelin Restaurant",
             description: "Enjoy a delicious dinner at Polo Fried Chicken, a Michelin Recognized restaurant known for its crispy fried chicken.",
@@ -423,12 +422,14 @@ const itinerary = [{
             image: "/intercont.webp"
           },
           {
-            title: "Visit Raan Jay Fai",
-            description: "Visit Raan Jay Fai, a Michelin-starred street food restaurant.",
-            image: ["/raan.jpeg", "/raan2.jpeg", "/raan3.jpeg"]
+            title: "Fun and Shopping at Iconsiam",
+            time: "4:00 PM",
+            description: "Spend the afternoon at Iconsiam, a luxury shopping mall with a variety of stores and entertainment options.",
+            image: ["/iconsiam.jpeg", "/iconsiam2.jpeg", "/iconsiam3.jpeg"]
           },
           {
             title: "Dinner at Phra Nakhon",
+            time: "6:30pm",
             description: "Enjoy a farewell dinner at Michelin Reccomended Phra Nakhon, known for its traditional Thai cuisine and beautiful setting.",
             image: ["/nakhon1.jpeg", "/nakhon2.jpeg"]
           },
@@ -444,7 +445,7 @@ const itinerary = [{
         activities: [
           {
             title: "Chatuchak Weekend Market",
-            time: "9:00 AM - 6:00 PM",
+            time: "10:00 AM - 6:00 PM",
             description: "Explore the vibrant Chatuchak Weekend Market, known for its wide range of products and local finds.",
             image: ["/chat.jpeg", "/chat2.jpeg", "/chat3.webp", "/chat4.jpeg"]
           },
@@ -456,11 +457,7 @@ const itinerary = [{
             title: "Louis Vuitton Experience",
             description: "Experience the Louis Vuitton Maison in Bangkok, a luxury shopping destination.",
           },
-          {
-            title: "Fun and Shopping at Iconsiam",
-            description: "Spend the afternoon at Iconsiam, a luxury shopping mall with a variety of stores and entertainment options.",
-            image: ["/iconsiam.jpeg", "/iconsiam2.jpeg", "/iconsiam3.jpeg"]
-          },
+ 
           {
             title: "Check Out of InterContinental Bangkok and transfer to the Airport",
             time: "7:30 PM",
