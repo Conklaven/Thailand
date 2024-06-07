@@ -148,35 +148,41 @@ const itinerary = [{
           },
           {
             title: "Bolt to the U Chiang Mai Hotel",
+            time: "2:00 PM",
             description: "Take a taxi to the hotel and check in",
           },
           {
             title: "Huen Phen",
+            time: "3:00 PM",
             description: "Enjoy a traditional Northern Thai lunch at Huen Phen, known for its authentic cuisine.",
             image: ["/huen-phen.jpg", "/phen2.jpeg", "/phen3.jpeg"]
           },
           { title: "Wat Phan On",
+            time: "3:30 PM",
             description: "Visit Wat Phan On, a beautiful temple in the heart of Chiang Mai.",
             image: ['/IMG_2025.JPG']
           },
-          { title: "Wat Phra That Doi Suthep",
-            description: "Explore Wat Phra That Doi Suthep, a sacred temple atop Doi Suthep mountain.",
-            image: ['/IMG_2026.JPG', '/IMG_2027.JPG']
-          },
-          {
-            title: "Neng Earthen Jar Roast Pork",
-            description: "Enjoy a delicious dinner at Neng Earthen Jar Roast Pork, known for its local cuisine.",
-            image: ["/Neng-Earthen-Jar-Roast-Pork-4.jpeg", "/pork2.jpeg", "/pork1.jpeg", "/pork4.jpeg"] 
+
+          { 
+            title: "Khao Soi Lung Prakit Kad Kom",
+            time: "closes at 4:30pm",
+            description: " Kha Soi Lung Prakit Kad Kom, a Michelin Recognized restuarant.",
+            image: ["/Khao Soi 1.webp"]
           },
           {
             title: "Visit the Chiang Mai Night Bazaar",
+            time: "6:00 PM",
             description: "Explore the vibrant Chiang Mai Night Bazaar, known for its local crafts, food, and entertainment.",
             image: ["/chiangMaiNight.webp", "/night2.jpeg", "/night3.jpeg", "/night4.jpeg"] 
           },
-          { title: "Late night snack at Kha Soi Lung Prakit Kad Kom",
-            description: "Conclude the day with a late-night snack at Kha Soi Lung Prakit Kad Kom, a Michelin Recognized restuarant.",
-            image: ["/Khao Soi 1.webp"]
-          }
+
+          {
+            title: "Chang Phueak Pork Leg Rice",
+            time : "9:00 PM",
+            description: "Savor a delicious late night snack at Chang Phueak Pork Leg Rice, known for its local specialties.",
+            image: ["/Khao-Kha-Moo.jpg", "/leg2.jpeg", "/leg3.jpeg", "/leg4.jpeg"]
+          },
+
         ]
       }, {
         day: "June 20th, 2024",
@@ -190,17 +196,19 @@ const itinerary = [{
             description: "Experience the joy of connecting with elephants as you don traditional mahout attire, engage in playful interactions, and participate in mud spas and bathing sessions. Culminate your adventure by mastering the art of traditional noodle soup creation and unwinding by the pool.",
             image: ["/elephants.jpeg", "/maerim2.webp", "/maerim3.jpeg"]
           },
-          {
-            title: "Chang Phueak Pork Leg Rice",
-            description: "Savor a delicious dinner at Chang Phueak Pork Leg Rice, known for its local specialties.",
-            image: ["/Khao-Kha-Moo.jpg", "/leg2.jpeg", "/leg3.jpeg", "/leg4.jpeg"]
-          },
+
 
           {
-            title: "Chiang Mai Cabaret Show",
-            description: "Enjoy an evening at the Chiang Mai Cabaret Show, featuring colorful performances and entertainment.",
-            image: ["/caberet.jpeg", "/cabaret2.jpeg", "/cabaret3.jpeg", "/cabaret4.jpeg"]
-          }
+            title: "Neng Earthen Jar Roast Pork",
+            time: "6:00 PM",
+            description: "Enjoy a delicious dinner at Neng Earthen Jar Roast Pork, known for its local cuisine.",
+            image: ["/Neng-Earthen-Jar-Roast-Pork-4.jpeg", "/pork2.jpeg", "/pork1.jpeg", "/pork4.jpeg"] 
+          },
+          // {
+          //   title: "Sapun Fried Chicken",
+          //   description: "Savor a delicious lunch at Sapun Fried Chicken, a local favorite.",
+          //   image: ["/sapun.jpeg"]
+          // },
         ]
       }, {
         day: "June 21st, 2024",
@@ -208,28 +216,34 @@ const itinerary = [{
         hotel: "Holiday Ao Nang Beach Resort Krabi",
         hotel_link: links["Holiday Ao Nang Beach Resort Krabi"],
         activities: [
-          {
-            title: "Wat Chedi Luang",
-            description: "Visit Wat Chedi Luang, known for its ancient ruins and towering stupa.",
-            image: ["/WatChediLuang.jpeg","/Chedi2.jpeg", "/Chedi4.jpeg"] 
-          },
-          {
-            title: "Wat Phra Singh",
-            description: "Explore Wat Phra Singh, a beautiful temple in the heart of Chiang Mai.",
-            image: ["/singh.jpeg", "/singh2.png"]
+
+          { 
+            title: "Wat Phra That Doi Suthep",
+            time: "9:00 AM",
+            description: "Explore Wat Phra That Doi Suthep, a sacred temple atop Doi Suthep mountain.",
+            image: ['/IMG_2026.JPG', '/IMG_2027.JPG']
           },
           {
             title: "Sapun Fried Chicken",
             description: "Savor a delicious lunch at Sapun Fried Chicken, a local favorite.",
             image: ["/sapun.jpeg"]
           },
+
           {
-            title: "Wat Suan dok",
-            description: "Visit Wat Suan dok, a beautiful temple in Chiang Mai.",
-            image: ["/suan.jpeg", "/suan2.jpeg"]
+            title: "Wat Chedi Luang",
+            description: "Visit Wat Chedi Luang, known for its ancient ruins and towering stupa.",
+            image: ["/WatChediLuang.jpeg","/Chedi2.jpeg", "/Chedi4.jpeg"] 
           },
+          // {
+          //   title: "Wat Phra Singh",
+          //   description: "Explore Wat Phra Singh, a beautiful temple in the heart of Chiang Mai.",
+          //   image: ["/singh.jpeg", "/singh2.png"]
+          // },
+
+ 
           {
             title: "Bolt to the Chiang Mai Airport",
+            time: "1:30 PM",
             description: "Take a taxi to the airport and check in for your flight to Krabi.",
           },
           {
@@ -445,7 +459,7 @@ const itinerary = [{
         activities: [
           {
             title: "Chatuchak Weekend Market",
-            time: "10:00 AM - 6:00 PM",
+            time: "10:00 AM - 2:00 PM",
             description: "Explore the vibrant Chatuchak Weekend Market, known for its wide range of products and local finds.",
             image: ["/chat.jpeg", "/chat2.jpeg", "/chat3.webp", "/chat4.jpeg"]
           },
