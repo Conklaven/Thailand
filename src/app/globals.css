@@ -134,8 +134,8 @@ nav > div > div {
   position: absolute;
   left: 0;
   top: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
   width: 200px;
+  flex-direction: column;
 }
 
 nav > div:hover > div {

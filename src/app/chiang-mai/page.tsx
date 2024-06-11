@@ -1,4 +1,4 @@
-export default function Bangkok() {
+export default function Chiangmai() {
     return (<p>Chiang Mai</p>)
 
 }
