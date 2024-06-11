@@ -95,3 +95,55 @@ a {
   text-decoration: underline;
 }
 
+/* globals.css */
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+.gradient-overlay {
+  background: linear-gradient(to right, #ff7e5f, #feb47b);
+}
+
+.dark\:gradient-overlay-dark {
+  background: linear-gradient(to right, #434343, #000000);
+}
+
+.navigation {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav > div {
+  position: relative;
+}
+
+nav > div > a {
+  padding: 1rem;
+  text-decoration: none;
+  display: block;
+}
+
+nav > div > div {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 200px;
+}
+
+nav > div:hover > div {
+  display: block;
+}
+
+nav > div > div > a {
+  padding: 0.5rem 1rem;
+}
+
+

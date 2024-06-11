@@ -12,6 +12,11 @@ const itinerary = [{
         desc: "Departure Day",
         activities: [
           {
+            title: "Cab to Ben Gurion Airport",
+            time: "8:00 PM",
+            description: "Hadar Taxi service pre-arranged but not paid to take you to the airport.",
+          },
+          {
             title: "Relax in the Dan Lounge before Departing from Tel Aviv to Bangkok",
             time: "11:45 PM",
             description: "Departure on EL AL LY 81",
@@ -33,14 +38,12 @@ const itinerary = [{
           },
           {
             title: "visit 7-11 by the hotel",
+            time: "4:30 PM",
             description: "Visit the iconic 7-11 convenience store to experience the local culture and pick up some snacks, bug spray, and other essentials.",
-
-
           },
           {
-            title: "Taxi to Platinum Fashion Mall",
-            time: "Closes at 8:00 PM",
-            description: "Take a taxi to the Platinum Fashion Mall, a shopping paradise known for its trendy fashion and accessories.",
+            title: "Shopping at mall",
+            description: "Time dependent either visit Platinum Fashion Mall cheap local clothes open till 8pm or MBK Center for knock off brand names open till 10pm",
           },
           {
             title: "Pratunam Night Market",
@@ -74,7 +77,8 @@ const itinerary = [{
           },
           {
             title: "Additional Shopping time",
-            time: "2:00 PM - 4:00 PM",
+            time: "2:00 PM - 6:00 PM",
+            description: "Enjoy additional shopping time at local markets or malls.",
           },
           {
             title: "Dinner and shopping in Chinatown Night Market",

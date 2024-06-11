@@ -1,0 +1,86 @@
+
+const shops = [
+    {
+        id: 1,
+        name: 'Platinum Fashion Mall',
+        description: 'Fashion mall with over 1,300 shops',
+        image: '',
+        city: 'Bangkok',
+        address: '222 Phetchaburi Rd, Thanon Phetchaburi, Ratchathewi, Bangkok 10400, Thailand',
+    },
+    {
+        id: 2,
+        name: 'MBK Center',
+        description: 'Shopping mall with over 2,000 shops',
+        image: '',
+        city: 'Bangkok',
+        address: '444 Phayathai Rd, Wang Mai, Pathum Wan District, Bangkok 10330, Thailand',
+    },
+    {
+        id: 3,
+        name: 'Pratunam Night Market',
+        description: 'Market with clothing, accessories, and more',
+        image: '',
+        city: 'Bangkok',
+        address: '869/1 Ratchaprarop Rd, Khwaeng Thanon Phaya Thai, Khet Ratchathewi, Krung Thep Maha Nakhon 10400, Thailand',
+    },
+    {
+        id: 4,
+        name: 'Chatuchak Weekend Market',
+        description: 'Market with clothing, accessories, and more',
+        image: '',
+        city: 'Bangkok',
+        address: '587/10 Kamphaeng Phet 2 Rd, Chatuchak, Bangkok 10900, Thailand',
+    },
+    {
+        id: 5,
+        name: 'Asiatique The Riverfront',
+        description: 'Shopping, dining, and entertainment complex',
+        image: '',
+        city: 'Bangkok',
+        address: '2194 Charoen Krung Rd, Wat Phraya Krai, Bang Kho Laem, Bangkok 10120, Thailand',
+    },
+    {
+        id: 6,
+        name: 'Siam Paragon',
+        description: 'Luxury shopping mall',
+        image: '',
+        city: 'Bangkok',
+        address: '991 Rama I Rd, Pathum Wan, Pathum Wan District, Bangkok 10330, Thailand',
+    },
+    {
+        id: 7,
+        name: 'CentralWorld',
+        description: 'Shopping mall with over 500 shops',
+        image: '',
+        city: 'Bangkok',
+        address: '999/9 Rama I Rd, Pathum Wan, Pathum Wan District, Bangkok 10330, Thailand',
+    },
+    {
+        id: 8,
+        name: 'Terminal 21',
+        description: 'Shopping mall with a global theme',
+        image: '',
+        city: 'Bangkok',
+        address: '88 Soi Sukhumvit 19, Khwaeng Khlong Toei Nuea, Khet Watthana, Bangkok 10110, Thailand',
+    },
+    {
+        id: 9,
+        name: 'Chiang Mai Night Bazaar',
+        description: 'Market with clothing, accessories, and more',
+        image: '',
+        city: 'Chiang Mai',
+        address: 'Chang Khlan Rd, Tambon Chang Khlan, Amphoe Mueang Chiang Mai, Chang Wat Chiang Mai 50100, Thailand',
+    },
+    {
+        id: 10,
+        name: 'Ao Nang Walking Street',
+        description: 'Market with clothing, accessories, and more',
+        image: '',
+        city: 'Krabi',
+        address: '4203, Tambon Ao Nang, Amphoe Mueang Krabi, Chang Wat Krabi 81000, Thailand',
+    },
+    
+    ];
+
+    export default shops;
