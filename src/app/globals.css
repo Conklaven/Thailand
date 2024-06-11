@@ -95,7 +95,35 @@ a {
   text-decoration: underline;
 }
 
-/* globals.css */
+.nav-item {
+  position: relative;
+}
+
+.sub-menu {
+  @apply hidden absolute bg-white shadow-md mt-2 rounded-lg;
+  z-index: 10;
+}
+
+.nav-item:hover .sub-menu,
+.nav-item:focus-within .sub-menu {
+  @apply block;
+}
+
+@media (max-width: 768px) {
+  .mobile-menu {
+    @apply flex-col hidden;
+  }
+
+  .mobile-menu.show {
+    @apply flex;
+  }
+
+  .nav-link {
+    @apply w-full text-center;
+  }
+}
+
+/* globals.css
 
 body {
   margin: 0;
@@ -144,6 +172,6 @@ nav > div:hover > div {
 
 nav > div > div > a {
   padding: 0.5rem 1rem;
-}
+} */
 
 
