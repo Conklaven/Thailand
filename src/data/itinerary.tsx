@@ -324,6 +324,7 @@ const itinerary = [{
           {
             title: "Dinner at Resort",
             description: "Asian Buffet Dinner at the Resort",
+            link: 'https://drive.google.com/file/d/1_-RJaBcvPM_MJLwvGhi-Y0KgmD9fOm5H/view'
           }
         ]
       }, {
@@ -434,6 +435,7 @@ const itinerary = [{
           {
             title: "Jacob's Birthday Dinner at the Beach Grill at the Resort",
             description: "Celebrate Jacob's birthday with a special dinner at the Beach Grill, known for smoked meat and seafood and beachfront setting.",
+            link: 'https://drive.google.com/file/d/1PkKHzFGpEEjTpZYpevWeCW9YJeP8mnR3/view'
           },
           {
             title: "Simon Cabaret Show",
