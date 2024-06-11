@@ -11,11 +11,13 @@ export default function Krabi() {
             <div className="flex gap-4">
                 <Link href={`${pathname}/shopping`} className="text-black no-underline">
                     <div className="border border-black p-5 rounded-lg text-center w-36 cursor-pointer bg-white shadow-md">
+                        <img src="https://miro.medium.com/v2/resize:fit:1400/1*fEezsvK8qd5DVPRFBSdZGw.jpeg" alt="Shopping" className="w-full h-24 object-cover rounded-md mb-2"/>
                         Shopping
                     </div>
                 </Link>
                 <Link href={`${pathname}/restaurants`} className="text-black no-underline">
                     <div className="border border-black p-5 rounded-lg text-center w-36 cursor-pointer bg-white shadow-md">
+                        <img src="https://i.ytimg.com/vi/HP9UMpvkoCM/maxresdefault.jpg" alt="Shopping" className="w-full h-24 object-cover rounded-md mb-2"/>
                         Food
                     </div>
                 </Link>
