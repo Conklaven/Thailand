@@ -15,7 +15,7 @@ export default function restaurant() {
                             <h2 className="text-xl text-black font-bold mb-2">{restaurant.name}</h2>
                             <p className="text-gray-700 mb-2">{restaurant.description}</p>
                             <p className="text-gray-600">
-                                <a rel="noopener noreferrer" target="_blank" href={`https://maps.google.com/?q=${restaurant.name}`}>
+                                <a rel="noopener noreferrer" target="_blank" href={`https://maps.google.com/?q=${restaurant.name} ${restaurant.city}`}>
                                     {restaurant.address}
                                 </a>
                             </p>

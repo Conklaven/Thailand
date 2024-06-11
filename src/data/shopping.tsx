@@ -80,6 +80,14 @@ const shops = [
         city: 'Krabi',
         address: '4203, Tambon Ao Nang, Amphoe Mueang Krabi, Chang Wat Krabi 81000, Thailand',
     },
+    {
+        id: 11,
+        name: 'Jodd Fairs Night Market',
+        description: 'Market with clothing, accessories, and more',
+        image: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjv9lsdkjyiAwSepIPs-XVbtxDVi-eCLv6yISlFjQ4QU9YDw1FPpOE67yrZBYbNmrE2C1pGsPis0sK6IkOaBRbX6qqpuj4XCKS6jfkzB8U7k0w_tK84lLEfyhoBp9ycbKCZHYOElZeUcoWLQeyBvrlbkLapJudsunLRr64SPNLkGSCubgT_CsHZ5jYI9g/w640-h436/Jodd%20Fairs.jpg',
+        city: 'Bangkok',
+        address: 'Rama IV Rd, Khlong Toei, Bangkok 10110, Thailand',
+    }
     
     ];
 

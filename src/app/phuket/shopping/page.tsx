@@ -13,7 +13,11 @@ export default function shopping() {
                         <div className="p-4">
                             <h2 className="text-xl text-black font-bold mb-2">{shop.name}</h2>
                             <p className="text-gray-700 mb-2">{shop.description}</p>
-                            <p className="text-gray-600">{shop.address}</p>
+                            <p className="text-gray-600">
+                                <a rel="noopener noreferrer" target="_blank" href={`https://maps.google.com/?q=${shop.name} ${shop.city}`}>
+                                    {shop.address}
+                                </a>
+                            </p>
                         </div>
                     </div>
                 ))}
