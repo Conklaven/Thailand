@@ -388,6 +388,7 @@ const itinerary = [{
           {
             title: "Steak and Meat Dinner buffet at the Resort",
             description: "Enjoy a delicious dinner at the resort, savoring the flavors of Thailand.",
+            link: 'https://drive.google.com/file/d/1S6rPkRmwYB481Os_0HAyzjGtNzlS1SVN/view'
           }
         ]
       }, {
