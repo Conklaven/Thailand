@@ -320,6 +320,10 @@ const itinerary = [{
             title: "Relax at the Hotel",
             description: "Spend the afternoon relaxing at the hotel, enjoying the beach and amenities.",
             image: ["/merlin.avif", "/merlin2.jpeg", "/merlin3.jpeg", "/merlin4.jpeg"]
+          },
+          {
+            title: "Dinner at Resort",
+            description: "Asian Buffet Dinner at the Resort",
           }
         ]
       }, {
@@ -340,6 +344,12 @@ const itinerary = [{
             image: ["/merlin.avif", "/merlin2.jpeg", "/merlin3.jpeg", "/merlin4.jpeg"]
 
           },
+
+          {
+            title: "Dinner at D.O.C.G. Italian Restaurant at resort",
+            description: "Enjoy a delicious dinner at D.O.C.G. Italian Restaurant, known for its authentic Italian cuisine.",
+
+          },
           {
             title: "Malin Plaza Night Market",
             description: "Visit the Malin Plaza Night Market for local food and shopping.",
@@ -358,6 +368,9 @@ const itinerary = [{
 
           },
           {
+            title: "Optional Activities",
+          },
+          {
             title: "Flying Hanuman Zipline",
             description: "Experience the thrill of ziplining at Flying Hanuman, exploring Phuket's jungle canopy.",
             image: ["/flyinghanuman.jpeg", "/flying2.avif", "/flying3.jpeg"]
@@ -373,9 +386,8 @@ const itinerary = [{
             image: ["/bangla.jpeg", "/bangla2.avif"]
           }, 
           {
-            title: "Naughty Nuri's",
-            description: "Enjoy a delicious dinner at Naughty Nuri's, known for its BBQ ribs and lively atmosphere.",
-            image: ["/naught1.jpeg"]
+            title: "Steak and Meat Dinner buffet at the Resort",
+            description: "Enjoy a delicious dinner at the resort, savoring the flavors of Thailand.",
           }
         ]
       }, {
@@ -389,6 +401,11 @@ const itinerary = [{
             time: "10:00AM - 4:00PM",
             description: "Enjoy the James Bond Island tour, including visits to the renowned James Bond Island, Hong Island, and Panyee Island.",
             image: ["/jamesbond.jpeg", "/hongisland.jpeg", "/panyee.jpeg"]
+          },
+          {
+            title: "Dinner at the Merchant Kitchen at Resort",
+            description: "Enjoy a delicious dinner at the Merchant Kitchen, known for its international cuisine.",
+
           },
           {
             title: "Evening at the Resort",
@@ -411,6 +428,11 @@ const itinerary = [{
           {
             title: "Relax at the Resort",
             description: "Spend the day relaxing at the resort, enjoying the beach and amenities. Kids at the Kids Club.",
+          },
+
+          {
+            title: "Jacob's Birthday Dinner at the Beach Grill at the Resort",
+            description: "Celebrate Jacob's birthday with a special dinner at the Beach Grill, known for smoked meat and seafood and beachfront setting.",
           },
           {
             title: "Simon Cabaret Show",
