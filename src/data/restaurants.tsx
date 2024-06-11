@@ -71,6 +71,46 @@ const restaurants = [
         image: 'https://media-cdn.tripadvisor.com/media/photo-s/10/1e/4e/06/caption.jpg',
         city: 'Chiang Mai',
         address: '139 Kampangdin Rd, Tambon Phra Sing, Amphoe Mueang Chiang Mai, Chang Wat Chiang Mai 50200, Thailand',
+    },
+    {
+        id: 14,
+        name: 'No. 6 Restaurant',
+        description: 'Thai cuisine and street food',
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEvFoFc4elwwUO_jlGh2mvUsOxEeODXjtG7w&s',
+        city: 'Phuket',
+        address: 'Thanon Thawiwong, Pa Tong, Kathu District, Phuket 83150, Thailand',
+    },
+    {
+        id: 15,
+        name: 'Kalyana Restaurant',
+        description: 'Thai cuisine and street food',
+        image: 'https://media-cdn.tripadvisor.com/media/photo-s/1a/e4/16/7b/house-biryani.jpg',
+        city: 'Bangkok',
+        address: '110, 112 Ratchaprarop Rd, Thanon Phaya Thai, Ratchathewi, Bangkok 10400, Thailand',
+    },
+    {
+        id: 16,
+        name: 'Suki Koka',
+        description: 'Sukiyaki and Thai cuisine',
+        image: 'https://cdn.tasteatlas.com/images/restaurants/5123f662dac548e684f5c392c4e1df03.jpg?w=600',
+        city: 'Chiang Mai',
+        address: 'Moon Muang Rd Lane 7, Tambon Si Phum, Amphoe Mueang Chiang Mai, Chang Wat Chiang Mai 50200, Thailand',
+    }, 
+    {
+        id: 17,
+        name: 'Kha Soi Lamduan Faham',
+        description: 'Northern Thai cuisine',
+        image: 'https://changpuakmagazine.com/images/article/110607KS_Dec22.jpg',
+        city: 'Chiang Mai',
+        address: '352/22 Charoenrat Rd, Wat Ket, Mueang Chiang Mai District, Chiang Mai 50000, Thailand',
+    }, 
+    {
+        id: 18,
+        name: 'Dash Chiang Mai',
+        description: 'Thai cuisine and street food',
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhgbStmL3Ae0X4HU8GoGiJUCOE-ZMad3t16g&s',
+        city: 'Chiang Mai',
+        address: '59 Mu Ban Suan Klang, Tambon Chang Phueak, Amphoe Mueang Chiang Mai, Chang Wat Chiang Mai 50300, Thailand',
     }
     ];
 
