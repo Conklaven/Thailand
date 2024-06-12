@@ -13,6 +13,7 @@ import { act } from "react-dom/test-utils";
 
 
 
+
 export default function Home() {
 
   
@@ -62,7 +63,7 @@ export default function Home() {
                 <p className="mb-2 text-base font-normal text-gray-500 dark:text-gray-400">{activity.description}</p>
                 {('link' in activity) && <a href={activity.link} target="_blank" rel="noopener noreferrer" className="text-blue-500 dark:text-blue-400 underline">More Info</a>}
                 {/* Make sure the Carousel is receiving the activity in the expected format */}
-                {activity.image && <Carousel activity={activity} imageSizeClass="md:w-1/4 w-1/2" />}
+                {('image' in activity && activity.image) && <Carousel activity={activity} imageSizeClass="md:w-1/4 w-1/2" />}
               </div>
             ))}
           </li>

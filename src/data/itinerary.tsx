@@ -341,14 +341,25 @@ const itinerary = [{
           },
           {
             title: "Afternoon at Resort",
-            description: "Spend the afternoon at the resort, enjoying the pool and beachfront.",
+            description: "Spend the afternoon at the resort, enjoying the pool, activities and beachfront.",
             image: ["/merlin.avif", "/merlin2.jpeg", "/merlin3.jpeg", "/merlin4.jpeg"]
 
+          },
+          {
+            title: "Sea Glass Jewelry Making",
+            time: "3:00 PM - 3:30 PM",
+            description: "At the Reef Center"
+          },
+          {
+            title: "Kid's Foam Party",
+            time: "5:00 PM - 6:00 PM",
+            description: "Kids Foam Party at the Resort. Meet at Kids Club 10 mins before.",
           },
 
           {
             title: "Dinner at D.O.C.G. Italian Restaurant at resort",
             description: "Enjoy a delicious dinner at D.O.C.G. Italian Restaurant, known for its authentic Italian cuisine.",
+            link: 'https://drive.google.com/file/d/1P-tAMpk659b_2mqC4WBOhZCkNHzQpLEj/view'
 
           },
           {
@@ -369,23 +380,46 @@ const itinerary = [{
 
           },
           {
-            title: "Optional Activities",
-          },
-          {
-            title: "Flying Hanuman Zipline",
-            description: "Experience the thrill of ziplining at Flying Hanuman, exploring Phuket's jungle canopy.",
-            image: ["/flyinghanuman.jpeg", "/flying2.avif", "/flying3.jpeg"]
-          },
-          {
-            title: "Carnival Magic",
-            description: "Visit Carnival Magic for a colorful and lively entertainment experience.",
-            image: ["/carnival.jpeg", "/carnival2.jpeg"]
-          },
-          {
-            title: "Bangla Road Nightlife",
-            description: "Explore the vibrant nightlife of Bangla Road, with its bustling bars and street performances.",
-            image: ["/bangla.jpeg", "/bangla2.avif"]
+            title: "Butterfly Sanctuary Visit for the kids",
+            time: "11:00 AM - 11:30 AM",
+            description: "Meet at the Kids club 10 mins before to Visit the Butterfly Garden at the resort for a colorful and educational experience.",
           }, 
+          {
+            title: "Henna Tattoos for adults",
+            time: "11:00 AM - 12:00 PM",
+            description: "Meet at the beach grill 10 mins before to get a Henna Tattoo at the resort.",
+          },
+          {
+            title: "Waffle making for the kids at the Kids Club",
+            time: "2:00 PM - 3:00 PM",
+          }, 
+          {
+            title: "Thai Dessert Making Class for the adults",
+            time: "3:00 PM - 4:00 PM",
+            description: "Meet at the Beach Lawn 1 10 mins before to learn how to make traditional Thai desserts.",
+          }, 
+          {
+            title: "Face Painting for the kids at the Kids Club",
+            time: "5:00 PM - 6:00 PM",
+          },
+          // {
+          //   title: "Optional Activities",
+          // },
+          // {
+          //   title: "Flying Hanuman Zipline",
+          //   description: "Experience the thrill of ziplining at Flying Hanuman, exploring Phuket's jungle canopy.",
+          //   image: ["/flyinghanuman.jpeg", "/flying2.avif", "/flying3.jpeg"]
+          // },
+          // {
+          //   title: "Carnival Magic",
+          //   description: "Visit Carnival Magic for a colorful and lively entertainment experience.",
+          //   image: ["/carnival.jpeg", "/carnival2.jpeg"]
+          // },
+          // {
+          //   title: "Bangla Road Nightlife",
+          //   description: "Explore the vibrant nightlife of Bangla Road, with its bustling bars and street performances.",
+          //   image: ["/bangla.jpeg", "/bangla2.avif"]
+          // }, 
           {
             title: "Steak and Meat Dinner buffet at the Resort",
             description: "Enjoy a delicious dinner at the resort, savoring the flavors of Thailand.",
@@ -405,8 +439,8 @@ const itinerary = [{
             image: ["/jamesbond.jpeg", "/hongisland.jpeg", "/panyee.jpeg"]
           },
           {
-            title: "Dinner at the Merchant Kitchen at Resort",
-            description: "Enjoy a delicious dinner at the Merchant Kitchen, known for its international cuisine.",
+            title: "Dinner at Resort",
+            description: "Enjoy a delicious dinner at the resort, savoring the flavors of Thailand.",
 
           },
           {
@@ -430,6 +464,10 @@ const itinerary = [{
           {
             title: "Relax at the Resort",
             description: "Spend the day relaxing at the resort, enjoying the beach and amenities. Kids at the Kids Club.",
+          },
+          {
+            title: "Thai Dessert Making Class for the kids",
+            time: "2:00 PM - 3:00 PM",
           },
 
           {
