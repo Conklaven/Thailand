@@ -91,7 +91,7 @@ const restaurants = [
     {
         id: 16,
         name: 'Suki Koka',
-        description: 'Sukiyaki and Thai cuisine',
+        description: 'Sukiyaki and Thai cuisine what to order: Suki Haeng, Suki Nam',
         image: 'https://cdn.tasteatlas.com/images/restaurants/5123f662dac548e684f5c392c4e1df03.jpg?w=600',
         city: 'Chiang Mai',
         address: 'Moon Muang Rd Lane 7, Tambon Si Phum, Amphoe Mueang Chiang Mai, Chang Wat Chiang Mai 50200, Thailand',
@@ -111,6 +111,82 @@ const restaurants = [
         image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhgbStmL3Ae0X4HU8GoGiJUCOE-ZMad3t16g&s',
         city: 'Chiang Mai',
         address: '59 Mu Ban Suan Klang, Tambon Chang Phueak, Amphoe Mueang Chiang Mai, Chang Wat Chiang Mai 50300, Thailand',
+    },
+    {
+        id: 19,
+        name: 'Naughty Nuri\'s',
+        description: 'Thai BBQ and street food',
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQtIUJYPgTLxMcOeppl3UvMxaNvyTrB9f_CA&s',
+        city: 'Phuket',
+        address: 'Thanon Thawiwong, Pa Tong, Kathu District, Phuket 83150, Thailand',
+
+    },
+    {
+        id: 20,
+        name: 'Raan Jay Fai',
+        description: 'Street food and Thai cuisine',
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3JLGAdfM7BlHoAkSLHX6DFpIiF8_IJ4SNkA&s',
+        city: 'Bangkok',
+        address: '327 Maha Chai Rd, Samran Rat, Phra Nakhon, Bangkok 10200, Thailand',
+
+    },
+    {
+        id: 21,
+        name: 'Phra Nakon',
+        description: 'Family Michelin reccomended Restaurant',
+        image: 'https://therantingpanda.com/wp-content/uploads/2022/12/eimg_6717.jpg',
+        city: 'Bangkok',
+        address: '28-30 Thanon Tanao, San Chao Pho Sua, Phra Nakhon, Bangkok 10200, Thailand',
+
+    },
+    {
+        id: 22,
+        name: 'Puy Roti Lady',
+        description: 'Street food and Thai cuisine',
+        image: 'https://i.ytimg.com/vi/ZQiknEkOMvQ/sddefault.jpg',
+        city: 'Bangkok',
+        address: '1 Soi Si Lom 2, Silom, Bang Rak, Bangkok 10500, Thailand',
+    },
+    {
+        id: 23,
+        name: 'Madam Somtum',
+        description: 'Contemporary Thai cuisine',
+        image: 'https://media-cdn.tripadvisor.com/media/photo-s/1a/d0/3a/b7/20200127-125802-largejpg.jpg',
+        city: 'Bangkok',
+    },
+    {
+        id: 24,
+        name: 'Baan Kuay Tiew Ruathong',
+        description: 'Thai cuisine and street food',
+        image: 'https://live.staticflickr.com/5502/10271121453_853f8d6acf_b.jpg',
+        city: 'Bangkok', 
+    },
+    {
+        id: 25,
+        name: 'Original Pad Kra Pao 1993',   
+        image: 'https://thethaiger.com/wp-content/uploads/2023/07/IMG_4397.jpg',
+        city: 'Bangkok',
+    },
+    {
+        id: 26,
+        name: 'Bubble in the Forest Cafe',
+        description: 'Bubble tea and Thai cuisine',
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRya_MQS6Q7KTL8IzpWmQWjD-sqIGBB6BefiA&s',
+        city: 'Bangkok',
+    },
+    {
+        id: 27,
+        name: 'Cherng Doi Roast Chicken',
+        description: 'What to Order: Kai Yang nung krob, som tam',
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2kcemaNs8G1Fbqqq1_O3nvYIjdIloCysapQ&s',
+        city: 'Chiang Mai',
+    },
+    {
+        id: 28,
+        name: 'Kiat Ocha',
+        description: 'Order Khao Man Kai Set, Moo Satay',
+        image: 'https://media-cdn.tripadvisor.com/media/daodao/photo-w/0e/34/36/32/kiat-ocha.jpg',
+        city: 'Chiang Mai',
     }
     ];
 

@@ -82,7 +82,7 @@ const itinerary = [{
           },
           {
             title: "Dinner and shopping in Chinatown Night Market",
-            description: "Enjoy a delicious dinner in Bangkok's vibrant Chinatown, known for its street food and lively atmosphere.",
+            description: "Enjoy a delicious dinner in Bangkok's vibrant Chinatown, known for its street food and lively atmosphere. also close by is Samphreng Market",
             image: "/chinatown.jpeg"
           },
 

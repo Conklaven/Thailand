@@ -87,6 +87,34 @@ const shops = [
         image: 'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjv9lsdkjyiAwSepIPs-XVbtxDVi-eCLv6yISlFjQ4QU9YDw1FPpOE67yrZBYbNmrE2C1pGsPis0sK6IkOaBRbX6qqpuj4XCKS6jfkzB8U7k0w_tK84lLEfyhoBp9ycbKCZHYOElZeUcoWLQeyBvrlbkLapJudsunLRr64SPNLkGSCubgT_CsHZ5jYI9g/w640-h436/Jodd%20Fairs.jpg',
         city: 'Bangkok',
         address: 'Rama IV Rd, Khlong Toei, Bangkok 10110, Thailand',
+    },
+    {
+        id: 12,
+        name: "Sampheng Market",
+        description: 'Market with clothing, accessories, and more',
+        image: 'https://img1.10bestmedia.com/Images/Photos/239598/p-sam_55_660x440_201404242206.jpg',
+        city: 'Bangkok',
+        address: 'Samphanthawong, Bangkok 10100, Thailand',
+    }, 
+    {
+        id: 13,
+        name: 'Damnoen Saduak Floating Market',
+        description: 'Floating market with food and souvenirs',
+        image: 'https://media.tacdn.com/media/attractions-splice-spp-674x446/0b/27/6c/1d.jpg',
+        city: 'Bangkok',
+        address: 'Damnoen Saduak, Ratchaburi 70130, Thailand',
+    },
+    {
+        id: 14,
+        name: 'Krabi Town Night Market',
+        description: 'Market with clothing, accessories, and more',
+        image: 'https://digitaltravelcouple.com/wp-content/uploads/2020/06/krabi-town-market.jpg',
+        city: 'Krabi',
+        address: 'Maharaj Rd, Tambon Pak Nam, Amphoe Mueang Krabi, Chang Wat Krabi 81000, Thailand',
+    },
+    {
+       
+
     }
     
     ];
